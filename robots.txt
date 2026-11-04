@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://cyberexecutive.github.io/cyber/sitemap.xml
+Sitemap: https://cyberexecutive.github.io/invest/sitemap.xml
