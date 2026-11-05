@@ -204,10 +204,15 @@ def generate_slide_html(slide):
               </button>
             </div>
 
-            <div class="quiz-feedback-box" id="quiz-feedback-{qid}">
+            <div class="quiz-feedback-box" id="quiz-feedback-{qid}" title="Clique para ampliar esta explicação em tela cheia">
               <div class="quiz-feedback-header">
                 <span class="quiz-feedback-title"></span>
-                <span class="quiz-score-badge">+10 Pontos</span>
+                <div style="display: flex; align-items: center; gap: 8px;">
+                  <span class="quiz-score-badge">+10 Pontos</span>
+                  <span class="quiz-feedback-zoom-hint" title="Ampliar em tela cheia" onclick="event.stopPropagation(); window.PresentationApp.openQuizFeedbackZoom({qid})">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+                  </span>
+                </div>
               </div>
               <div class="quiz-feedback-text">
                 {slide['feedback_text']}
@@ -218,6 +223,10 @@ def generate_slide_html(slide):
                 </button>
                 <button class="action-pill" onclick="window.PresentationApp.retryQuiz({qid})">
                   Refazer Questão
+                </button>
+                <button class="action-pill btn-zoom-feedback" onclick="window.PresentationApp.openQuizFeedbackZoom({qid})" title="Ampliar resposta em tela cheia">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+                  Ampliar em Tela Cheia
                 </button>
               </div>
             </div>
@@ -427,7 +436,7 @@ def compile_index_html():
   <meta name="twitter:description" content="Aprenda a investir do zero ao avançado, dominar seu orçamento, lucrar com ações e se proteger com alocação global.">
   <meta name="twitter:image" content="https://cyberexecutive.github.io/invest/imagens/anuncio-hotmart-1x1.jpg">
 
-  <link rel="stylesheet" href="css/styles.css?v=4.2">
+  <link rel="stylesheet" href="css/styles.css?v=4.5">
   
 </head>
 <body>
@@ -794,7 +803,7 @@ def compile_index_html():
   <div id="course-toast" class="course-toast" aria-live="polite"></div>
 
   
-  <script src="js/presentation.js?v=4.2"></script>
+  <script src="js/presentation.js?v=4.5"></script>
 </body>
 </html>'''
 

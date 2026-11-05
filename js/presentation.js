@@ -617,6 +617,11 @@
           applyQuizState(container, selIdx, isCorrect);
           renderModulesDrawer();
           updateDashboardStats();
+
+          // Abre automaticamente a resposta em tela cheia/modal de zoom com destaque visual
+          setTimeout(() => {
+            openQuizFeedbackZoom(quizId, isCorrect);
+          }, 350);
         });
       }
 
@@ -719,6 +724,120 @@
   /**
    * Aplica o estado visual do quiz após confirmação
    */
+
+  /**
+   * Abre a explicação e feedback da resposta em tela cheia / Zoom Modal
+   */
+  function openQuizFeedbackZoom(quizId, isCorrectOverride) {
+    if (!dom.cardZoomModal || !dom.cardZoomContent || !dom.cardZoomContainer) return;
+
+    const container = document.querySelector(`.quiz-container[data-quiz-id="${quizId}"]`);
+    if (!container) return;
+
+    const slide = container.closest('.slide');
+    const slideCat = slide ? slide.querySelector('.slide-category') : null;
+    const catText = slideCat ? slideCat.textContent.replace(/\s+/g, ' ').trim() : 'DESAFIO DE DECISÃO FINANCEIRA';
+    const slideTitle = slide ? slide.querySelector('.slide-title') : null;
+    const titleText = slideTitle ? slideTitle.textContent.replace(/\s+/g, ' ').trim() : `Quiz ${quizId}`;
+
+    const feedbackBox = container.querySelector('.quiz-feedback-box');
+    const feedbackTextElem = feedbackBox ? feedbackBox.querySelector('.quiz-feedback-text') : null;
+    const feedbackText = feedbackTextElem ? feedbackTextElem.innerHTML : '';
+
+    const saved = state.quizzes[quizId];
+    const isCorrect = typeof isCorrectOverride === 'boolean'
+      ? isCorrectOverride
+      : (saved ? saved.correct : (feedbackBox ? feedbackBox.classList.contains('correct') : true));
+
+    const themeClass = isCorrect ? 'theme-emerald' : 'theme-rose';
+    dom.cardZoomContainer.className = `card-modal-container ${themeClass}`;
+
+    const iconSvg = isCorrect
+      ? `<svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>`
+      : `<svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>`;
+
+    const statusBadge = isCorrect
+      ? `<span class="zoomed-tag" style="color: #34d399; border-color: rgba(16,185,129,0.4); background: rgba(16,185,129,0.15); font-weight: 800;">🎉 RESPOSTA CORRETA • +10 PONTOS</span>`
+      : `<span class="zoomed-tag" style="color: #f87171; border-color: rgba(239,68,68,0.4); background: rgba(239,68,68,0.15); font-weight: 800;">⚠️ RESPOSTA INCORRETA • REVISE A TESE</span>`;
+
+    const titleH2 = isCorrect
+      ? `Excelente Decisão Estratégica!`
+      : `Atenção aos Riscos Financeiros!`;
+
+    const actionButtons = isCorrect
+      ? `
+        <button class="action-pill primary" id="btn-zoom-next-slide" style="padding: 13px 30px; font-weight: 800; font-size: 1.05rem; border-radius: 999px; box-shadow: 0 4px 20px rgba(16, 185, 129, 0.4);">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+          Próxima Aula →
+        </button>
+        <button class="action-pill" id="btn-zoom-retry-quiz" style="padding: 12px 22px; font-size: 0.95rem; border-radius: 999px;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"/></svg>
+          Refazer Questão
+        </button>
+        <button class="action-pill" onclick="window.PresentationApp.closeCardZoom()" style="padding: 12px 20px; font-size: 0.95rem; border-radius: 999px; margin-left: auto;">
+          Fechar Visualização (Esc)
+        </button>
+      `
+      : `
+        <button class="action-pill primary" id="btn-zoom-retry-quiz" style="padding: 13px 28px; font-weight: 800; font-size: 1.05rem; border-radius: 999px; background: rgba(239, 68, 68, 0.85); border-color: #ef4444;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"/></svg>
+          Tentar Novamente
+        </button>
+        <button class="action-pill" onclick="window.PresentationApp.closeCardZoom()" style="padding: 12px 20px; font-size: 0.95rem; border-radius: 999px; margin-left: auto;">
+          Fechar Visualização (Esc)
+        </button>
+      `;
+
+    dom.cardZoomContent.innerHTML = `
+      <div class="zoomed-header">
+        <div class="zoomed-icon ${isCorrect ? 'emerald' : 'rose'}" style="width: 54px; height: 54px; border-radius: 14px; display: flex; align-items: center; justify-content: center; background: ${isCorrect ? 'rgba(16,185,129,0.18)' : 'rgba(239,68,68,0.18)'};">
+          ${iconSvg}
+        </div>
+        <div class="zoomed-meta">
+          ${statusBadge}
+          <h2 class="zoomed-title" style="font-size: clamp(1.4rem, 2.2vw, 1.9rem); margin-top: 4px; color: #ffffff;">${titleH2}</h2>
+          <div style="font-size: 0.85rem; color: #94a3b8; font-weight: 600;">${catText} • ${titleText}</div>
+        </div>
+      </div>
+
+      <div class="zoomed-body" style="margin: clamp(14px, 2.2vh, 22px) 0; padding: clamp(18px, 2.5vh, 26px); background: rgba(15, 23, 42, 0.75); border: 1.5px solid ${isCorrect ? 'rgba(16, 185, 129, 0.4)' : 'rgba(239, 68, 68, 0.4)'}; border-radius: 16px; box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.4);">
+        <div style="font-size: clamp(1.1rem, 1.6vw, 1.35rem); line-height: 1.65; color: #f8fafc; font-weight: 400;">
+          ${feedbackText}
+        </div>
+      </div>
+
+      <div class="zoomed-quiz-actions" style="display: flex; gap: 14px; align-items: center; justify-content: flex-start; flex-wrap: wrap;">
+        ${actionButtons}
+      </div>
+    `;
+
+    const btnNext = dom.cardZoomContent.querySelector('#btn-zoom-next-slide');
+    if (btnNext) {
+      btnNext.addEventListener('click', () => {
+        closeCardZoom();
+        nextSlide();
+      });
+    }
+
+    const btnRetry = dom.cardZoomContent.querySelector('#btn-zoom-retry-quiz');
+    if (btnRetry) {
+      btnRetry.addEventListener('click', () => {
+        closeCardZoom();
+        retryQuiz(quizId);
+      });
+    }
+
+    dom.cardZoomModal.classList.add('open');
+    dom.cardZoomModal.setAttribute('aria-hidden', 'false');
+    state.isCardZoomOpen = true;
+
+    if (btnNext) {
+      btnNext.focus();
+    } else if (btnRetry) {
+      btnRetry.focus();
+    }
+  }
+
   function applyQuizState(container, selectedIdx, isCorrect) {
     container.classList.add('quiz-answered');
     const optionButtons = container.querySelectorAll('.quiz-opt-btn');
@@ -750,6 +869,16 @@
       if (scoreBadge) {
         scoreBadge.textContent = isCorrect ? '+10 Pontos' : '0 Pontos';
         scoreBadge.style.color = isCorrect ? '#34d399' : '#f87171';
+      }
+
+      // Adiciona listener para clicar no box e ampliar em tela cheia
+      if (!feedbackBox._hasZoomListener) {
+        feedbackBox._hasZoomListener = true;
+        feedbackBox.addEventListener('click', (e) => {
+          if (e.target.closest('button')) return;
+          const qId = parseInt(container.getAttribute('data-quiz-id'), 10);
+          openQuizFeedbackZoom(qId, isCorrect);
+        });
       }
     }
   }
@@ -1918,6 +2047,7 @@
     toggleModulesDrawer,
     toggleTheme,
     retryQuiz,
+    openQuizFeedbackZoom,
     restartCourse,
     unlockCourse,
     lockCourse,
