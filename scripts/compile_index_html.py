@@ -427,7 +427,7 @@ def compile_index_html():
   <meta name="twitter:description" content="Aprenda a investir do zero ao avançado, dominar seu orçamento, lucrar com ações e se proteger com alocação global.">
   <meta name="twitter:image" content="https://cyberexecutive.github.io/invest/imagens/anuncio-hotmart-1x1.jpg">
 
-  <link rel="stylesheet" href="css/styles.css?v=4.0">
+  <link rel="stylesheet" href="css/styles.css?v=4.2">
   
 </head>
 <body>
@@ -794,7 +794,7 @@ def compile_index_html():
   <div id="course-toast" class="course-toast" aria-live="polite"></div>
 
   
-  <script src="js/presentation.js?v=4.0"></script>
+  <script src="js/presentation.js?v=4.2"></script>
 </body>
 </html>'''
 
