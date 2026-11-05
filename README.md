@@ -1,80 +1,79 @@
-﻿# Capacitação Executiva em Segurança da Informação e Conscientização Digital
+# Como Investir e Gerenciar o Seu Dinheiro
 
-Plataforma web de capacitação e conscientização corporativa em Segurança da Informação, Engenharia Social, Proteção de Dados (LGPD) e Boas Práticas Digitais.
+Plataforma web de capacitação prática e executiva em Educação Financeira, Renda Fixa Inteligente, Ações de Valor, Fundos Imobiliários (FIIs), Criptoativos e Alocação Patrimonial Global Blindada.
 
 🔗 **Acesse online no GitHub Pages:**  
-- **Treinamento Interativo:** [https://cyberexecutive.github.io/cyber/](https://cyberexecutive.github.io/cyber/)  
-- **Landing Page de Vendas:** [https://cyberexecutive.github.io/cyber/landing.html](https://cyberexecutive.github.io/cyber/landing.html)  
+- **Treinamento Interativo:** [https://cyberexecutive.github.io/invest/](https://cyberexecutive.github.io/invest/)  
+- **Landing Page de Vendas:** [https://cyberexecutive.github.io/invest/landing.html](https://cyberexecutive.github.io/invest/landing.html)  
 
 💳 **Checkouts Oficiais de Pagamento (R$ 47,00):**  
-- **Kiwify Checkout:** [https://pay.kiwify.com.br/E63o3Rc](https://pay.kiwify.com.br/E63o3Rc)  
-- **Kiwify Sales Page:** [https://kiwify.app/VXRZALg](https://kiwify.app/VXRZALg)  
 - **Hotmart Checkout:** [https://pay.hotmart.com/H108332477H](https://pay.hotmart.com/H108332477H)  
+- **Kiwify Checkout:** [https://pay.kiwify.com.br/E63o3Rc](https://pay.kiwify.com.br/E63o3Rc)  
 
 ---
 
-## 📌 Estrutura Completa do Curso (11 Módulos • 34 Aulas)
+## 📌 Estrutura Completa do Curso (6 Módulos • 38 Slides)
 
-1. **Capa & Boas-Vindas** — Visão geral da trilha, competências e objetivos.
-2. **Módulo 01: Fundamentos da Segurança da Informação**
-   - *Aula 02:* A Tríade CIA (Confidencialidade, Integridade, Disponibilidade), Autenticidade e Não-Repúdio.
-   - *Aula 03:* Classificação da Informação (Pública, Interna, Confidencial, Restrita) e Ciclo de Vida do Dado.
-   - *Aula 04:* **Quiz 01** — Desafio Prático: O Vazamento da Planilha.
-3. **Módulo 02: Engenharia Social: A Arte da Manipulação Humana**
-   - *Aula 05:* Os 6 Gatilhos Mentais dos Criminosos (Urgência, Autoridade, Medo, Gentileza, Curiosidade, Manada).
-   - *Aula 06:* Golpes Reais (Pretexting, Baiting, Quid Pro Quo, Tailgating, Shoulder Surfing, Deepfakes de Voz/Vishing).
-   - *Aula 07:* A Muralha Humana e a Regra do "Segundo Canal".
-   - *Aula 08:* **Quiz 02** — Desafio de Engenharia Social: A Ordem Urgente da Diretoria.
-4. **Módulo 03: Golpes Digitais: Phishing, Smishing e Links Falsos**
-   - *Aula 09:* Anatomia das Iscas Digitais (E-mails fraudulentos, SMS maliciosos, golpes no WhatsApp e Spear Phishing).
-   - *Aula 10:* Como Inspecionar Links (Hover), Domínios Forjados (Typosquatting) e Anexos Mascarados.
-   - *Aula 11:* **Quiz 03** — Desafio de Phishing: O Comunicado de Bônus Extraordinário.
-5. **Módulo 04: Senhas Fortes, Cofres e Autenticação Moderna**
-   - *Aula 12:* A Era das Senhas Longas e Frases Secretas (Por que comprimento supera complexidade).
-   - *Aula 13:* Cofres de Senhas Corporativos, Apps Autenticadores (TOTP) e Chaves Físicas FIDO2 / Passkeys.
-   - *Aula 14:* **Quiz 04** — Desafio de Autenticação: Blindando suas Contas.
-6. **Módulo 05: Segurança no Uso de Inteligência Artificial**
-   - *Aula 15:* IA Generativa no Trabalho (ChatGPT, Copilot, Gemini) e o perigo do Shadow AI.
-   - *Aula 16:* As 4 Regras de Ouro: Anonimização, proibição de dados confidenciais e validação de alucinações.
-   - *Aula 17:* **Quiz 05** — Desafio de IA: Revisão de Proposta Comercial.
-7. **Módulo 06: Malwares, Ransomware e Ameaças Silenciosas**
-   - *Aula 18:* O Ecossistema das Ameaças: Ransomware de Dupla Extorsão, Infostealers e Malvertising.
-   - *Aula 19:* Defesa em Camadas, Atualizações Críticas (Zero-Day) e Menor Privilégio.
-   - *Aula 20:* **Quiz 06** — Desafio de Malware: Ameaça na Área de Trabalho.
-8. **Módulo 07: Trabalho Híbrido, Home Office e Wi-Fi Público**
-   - *Aula 21:* Perigos de Wi-Fi Aberto, Ataques Man-in-the-Middle e Redes Gêmeas (Evil Twin).
-   - *Aula 22:* Home Office Seguro, Senha de Roteadores, Uso Exclusivo e VPN Corporativa.
-   - *Aula 23:* **Quiz 07** — Desafio de Trabalho Remoto: O Wi-Fi do Aeroporto.
-9. **Módulo 08: Proteção de Dados, LGPD e Privacidade**
-   - *Aula 24:* Dados Pessoais vs Sensíveis, Princípios de Necessidade e Finalidade.
-   - *Aula 25:* Práticas no Dia a Dia: Cópia Oculta (Cco), permissões na nuvem e descarte de papel.
-   - *Aula 26:* **Quiz 08** — Desafio de LGPD: Envio de Base de Clientes.
-10. **Módulo 09: Segurança Física no Escritório e Mídias**
-    - *Aula 27:* Política de Mesa Limpa, Proibição de Post-its com Senhas e o Reflexo do `Win + L`.
-    - *Aula 28:* Dispositivos Físicos Perigosos: BadUSB (Rubber Ducky), cabos espiões e Juice Jacking.
-    - *Aula 29:* **Quiz 09** — Desafio de Segurança Física: O Pen Drive Achado.
-11. **Módulo 10: Resposta a Incidentes e Notificação Imediata**
-    - *Aula 30:* Protocolo de Emergência dos 5 Minutos: Isolar da rede, não desligar e notificar a TI.
-    - *Aula 31:* Cultura Sem Culpa: Por que reportar rápido salva a organização.
-    - *Aula 32:* **Quiz 10** — Desafio de Resposta a Incidentes: A Senha Digitada por Engano.
-12. **Módulo 11: Avaliação Final, Conclusão e Certificação**
-    - *Aula 33:* Dashboard de Conquistas, taxa de acerto nos quizzes e competências dominadas.
-    - *Aula 34:* **Certificado Oficial de Cibersegurança** — Personalização interativa do nome do colaborador, selo de autenticidade e botão para Imprimir / Exportar em PDF (A4 Paisagem).
+1. **Slide 01: Capa & Apresentação Geral** — Visão geral da jornada, metodologia ativa e competências.
+2. **Módulo 01: Mentalidade Financeira & O Jogo do Dinheiro**
+   - *Aula 02:* O Paradoxo do Salário Alto & A Corrida dos Ratos (Inflação do estilo de vida e Ativos vs Passivos).
+   - *Aula 03:* As Regras de Ouro de Warren Buffett & O Jogo do Longo Prazo (Círculo de competência e paciência).
+   - *Aula 04:* A Matemática dos Juros Compostos: Devedor vs Investidor (A bola de neve a seu favor).
+   - *Aula 05:* O Sistema dos 3 Potes: Sobrevivência, Crescimento e Liberdade (Acabando com a ansiedade financeira).
+   - *Aula 06:* O Raio-X do Seu Dinheiro: Onde Está o Ralo da Sua Conta? (Tarifas abusivas e a regra das 48h).
+   - *Aula 07:* **Quiz 01** — Desafio Prático: O Dilema do 13º Salário e da Promoção Inesperada.
+3. **Módulo 02: Orçamento sem Neura, Faxina & Reserva Anti-Crise**
+   - *Aula 08:* O Método 50/30/20 Simplificado: Sem Planilhas Neuróticas (Equilíbrio entre presente e futuro).
+   - *Aula 09:* A Faxina dos Boletos Fantasmas: Assinaturas e Ralos Invisíveis (Resgatando até R$ 800/mês).
+   - *Aula 10:* Cartão de Crédito: Sua Maior Ferramenta ou Seu Pior Inimigo? (Milhas e cashback sem juros).
+   - *Aula 11:* O Método Bola de Neve para Eliminar Dívidas sem Sofrimento (A estratégia de Dave Ramsey).
+   - *Aula 12:* A Sagrada Reserva de Emergência: Onde Deixar e Quanto Guardar (O airbag do investidor).
+   - *Aula 13:* **Quiz 02** — Desafio Prático: O Radiador Estourou no Dia 27 e a Reserva Salva a Pele.
+4. **Módulo 03: Renda Fixa Inteligente & O Fim da Poupança**
+   - *Aula 14:* Por Que a Caderneta de Poupança é um Crime Contra o Seu Futuro (A armadilha dos 70% da Selic).
+   - *Aula 15:* O Guia Definitivo do Tesouro Direto: Selic, IPCA+ e Prefixados (Emprestando para o governo).
+   - *Aula 16:* O Cardápio dos Bancos: CDB, LCI e LCA Sem Complicação (Comparando títulos isentos de IR).
+   - *Aula 17:* O Fundo Garantidor de Créditos (FGC): Seu Co-Piloto até R$ 250k (Segurança institucional).
+   - *Aula 18:* Montando uma Escada de Vencimentos (Bond Ladder para liquidez contínua e rentabilidade).
+   - *Aula 19:* **Quiz 03** — Desafio Prático: A Ligação Sedutora do Gerente Oferecendo Capitalização.
+5. **Módulo 04: Renda Variável: Ações de Valor, Dividendos & FIIs**
+   - *Aula 20:* Desmistificando a Bolsa: Você é Sócio de Negócios Reais, Não Apostador (Fim da ilusão do day trade).
+   - *Aula 21:* Fundos Imobiliários (FIIs): Receba 'Aluguel' Isento Todo Mês (Shoppings e galpões a partir de R$ 10).
+   - *Aula 22:* O Método dos Dividendos Inteligentes (A filosofia Barsi & Peter Lynch de efeito bola de neve).
+   - *Aula 23:* O Filtro BESST: Os 5 Setores Mais Perenes da Bolsa (Bancos, Energia, Saneamento, Seguros e Telecom).
+   - *Aula 24:* A Psicologia do Mercado: Por Que a Manada Compra no Topo e Vende na Baixa (Howard Marks e Sr. Mercado).
+   - *Aula 25:* **Quiz 04** — Desafio Prático: O Noticiário Grita Caos e o Ibovespa Desaba 4,5%.
+6. **Módulo 05: Criptoativos, Bitcoin & A Nova Fronteira Digital**
+   - *Aula 26:* O Que é o Bitcoin e Por Que a Escassez dos 21 Milhões Importa (O ouro digital contra a inflação).
+   - *Aula 27:* Criptoativos Sérios vs Micos, Memecoins e Pirâmides (Identificando sinais de golpes).
+   - *Aula 28:* Custódia Pessoal e Segurança: Not Your Keys, Not Your Coins (Hot wallets vs Cold wallets offline).
+   - *Aula 29:* A Estratégia DCA (Dollar Cost Averaging): Sem Estresse e Sem Gráficos (Aportes recorrentes).
+   - *Aula 30:* Alocação Consciente: A Regra de Ouro dos 2% a 5% da Carteira (Assimetria convexa de Nassim Taleb).
+   - *Aula 31:* **Quiz 05** — Desafio Prático: A Dica Quente do Primo no Churrasco de Domingo.
+7. **Módulo 06: A Carteira Blindada, Rebalanceamento & Liberdade**
+   - *Aula 32:* A Teoria do Portfólio Blindado de Ray Dalio (All-Weather: prosperando em qualquer clima econômico).
+   - *Aula 33:* Internacionalização do Patrimônio: Dólar, ETFs e Proteção Global (Investindo no S&P 500).
+   - *Aula 34:* O Número da Liberdade Financeira: A Regra dos 4% e a Renda Perpétua (O estudo de Trinity).
+   - *Aula 35:* Rebalanceamento em 15 Minutos: Comprando na Baixa no Automático (Sem emoção e sem taxas).
+   - *Aula 36:* Os 5 Mandamentos da Riqueza Duradoura (A síntese executiva para enriquecer com tranquilidade).
+   - *Aula 37:* **Quiz 06** — Desafio Final: O Desafio da Bolada de R$ 50.000: Como Alocar com Maestria?
+8. **Slide 38: Dashboard Executivo Final & Certificação Oficial**
+   - Emissão formal do **Certificado de Formação Executiva em Gestão Financeira & Investimentos Estratégicos** (6 Horas), com nome do aluno, CPF, hash criptográfico único `INV-2026-XXXX-XXXX`, assinatura digital do CEO Claudinei Gonçalves de Lima e exportação em PDF de alta resolução.
 
 ---
 
 ## 🚀 Recursos Interativos da Plataforma
 
-- **Trilha de Aulas Retrátil (Menu Lateral):** Acesso rápido a todos os módulos com indicadores de status (`✅ Concluído`, `⏳ Em andamento`, `⚪ Em aberto`), acionado por botão no cabeçalho ou tecla `M`.
-- **Quizzes Interativos de Fixação:** Desafios baseados em casos reais do cotidiano, com feedback pedagógico instantâneo (verde/vermelho), justificativa e contagem de pontos.
-- **Persistência de Progresso (`localStorage`):** O aluno pode fechar a página e retomar exatamente de onde parou, com quizzes respondidos e pontuações preservadas.
-- **Gerador de Certificado Oficial:** O colaborador insere seu nome e emite na própria tela seu certificado formal estilizado, pronto para impressão em alta definição (`window.print()`).
-- **Ampliação Interativa (Card Zoom):** Clique ou toque em qualquer card, cabeçalho, aviso ou ilustração técnica para abrir em modo ampliado de leitura.
-- **Zero Rolagem e Encaixe Fluido:** 100% dos slides se ajustam com precisão matemática em qualquer resolução de tela (monitores Full HD, notebooks, tablets e smartphones).
-- **Atalhos de Teclado:**
-  - `←` e `→` / `Espaço`: Navegação entre aulas
-  - `M`: Abrir/Fechar Trilha de Módulos
-  - `F`: Alternar Tela Cheia
-  - `T`: Alternar Tema Claro / Escuro
-  - `G` ou `O`: Grade de Miniaturas
-  - `Esc`: Fechar modais ou menus
+- **Trilha de Módulos Retrátil:** Navegação rápida entre os 6 módulos com indicadores visuais de progresso e notas nos quizzes (`M`).
+- **6 Quizzes Interativos da Vida Real:** Situações práticas com humor, alternativas ampliáveis em tela cheia, barra de confirmação e feedback pedagógico completo.
+- **Persistência Completa (`localStorage`):** Respostas dos quizzes, dados do titular e desbloqueios ficam salvos no navegador.
+- **Emissão Instantânea de Certificado:** Impressão em PDF nativa (`window.print()`) formatada em A4 paisagem, com selos e antifraude.
+- **Modo Gestor / Acesso Total:** Acesso liberado via chaves master (`INVEST-MASTER`, `INVEST-PRO-2026`, `GESTOR`, `ADMIN`).
+- **Design Adaptativo com Zero Rolagem:** Interface estilo desktop/web app que se adapta proporcionalmente a qualquer tamanho de tela.
+- **Atalhos Rápidos de Teclado:**
+  - `←` e `→` / `Espaço`: Navegar entre slides
+  - `M`: Abrir / fechar menu lateral de módulos
+  - `F`: Modo tela cheia
+  - `T`: Alternar tema Claro / Escuro
+  - `G` ou `O`: Abrir grade de miniaturas
+  - `Esc`: Fechar modais e janelas de zoom

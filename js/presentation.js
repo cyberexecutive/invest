@@ -6,103 +6,71 @@
 (function () {
   'use strict';
 
-  // Metadados dos 11 Módulos
+  // Metadados dos 6 Módulos Práticos de Investimentos e Finanças
   const modulesMeta = [
-  {
-    "id": 1,
-    "num": "01",
-    "title": "Fundamentos da Segurança da Informação",
-    "startSlide": 2,
-    "endSlide": 4,
-    "quizSlide": 4
-  },
-  {
-    "id": 2,
-    "num": "02",
-    "title": "Engenharia Social: A Arte da Manipulação",
-    "startSlide": 5,
-    "endSlide": 8,
-    "quizSlide": 8
-  },
-  {
-    "id": 3,
-    "num": "03",
-    "title": "Golpes Digitais: Phishing, Smishing e Links",
-    "startSlide": 9,
-    "endSlide": 11,
-    "quizSlide": 11
-  },
-  {
-    "id": 4,
-    "num": "04",
-    "title": "Senhas Fortes, Cofres e Autenticação",
-    "startSlide": 12,
-    "endSlide": 14,
-    "quizSlide": 14
-  },
-  {
-    "id": 5,
-    "num": "05",
-    "title": "Segurança com Inteligência Artificial",
-    "startSlide": 15,
-    "endSlide": 17,
-    "quizSlide": 17
-  },
-  {
-    "id": 6,
-    "num": "06",
-    "title": "Malwares, Ransomware e Ameaças",
-    "startSlide": 18,
-    "endSlide": 20,
-    "quizSlide": 20
-  },
-  {
-    "id": 7,
-    "num": "07",
-    "title": "Trabalho Híbrido, Home Office e Wi-Fi",
-    "startSlide": 21,
-    "endSlide": 23,
-    "quizSlide": 23
-  },
-  {
-    "id": 8,
-    "num": "08",
-    "title": "Proteção de Dados, LGPD e Privacidade",
-    "startSlide": 24,
-    "endSlide": 26,
-    "quizSlide": 26
-  },
-  {
-    "id": 9,
-    "num": "09",
-    "title": "Segurança Física no Escritório e Mídias",
-    "startSlide": 27,
-    "endSlide": 29,
-    "quizSlide": 29
-  },
-  {
-    "id": 10,
-    "num": "10",
-    "title": "Resposta a Incidentes e Notificação",
-    "startSlide": 30,
-    "endSlide": 32,
-    "quizSlide": 32
-  },
-  {
-    "id": 11,
-    "num": "11",
-    "title": "Avaliação Final e Certificação",
-    "startSlide": 33,
-    "endSlide": 34,
-    "quizSlide": null
-  }
-];
+    {
+      "id": 1,
+      "num": "01",
+      "title": "Mentalidade Financeira & O Jogo do Dinheiro",
+      "startSlide": 2,
+      "endSlide": 7,
+      "quizSlide": 7
+    },
+    {
+      "id": 2,
+      "num": "02",
+      "title": "Orçamento sem Neura, Faxina & Reserva Anti-Crise",
+      "startSlide": 8,
+      "endSlide": 13,
+      "quizSlide": 13
+    },
+    {
+      "id": 3,
+      "num": "03",
+      "title": "Renda Fixa Inteligente & O Fim da Poupança",
+      "startSlide": 14,
+      "endSlide": 19,
+      "quizSlide": 19
+    },
+    {
+      "id": 4,
+      "num": "04",
+      "title": "Renda Variável: Ações de Valor, Dividendos & FIIs",
+      "startSlide": 20,
+      "endSlide": 25,
+      "quizSlide": 25
+    },
+    {
+      "id": 5,
+      "num": "05",
+      "title": "Criptoativos, Bitcoin & A Nova Fronteira Digital",
+      "startSlide": 26,
+      "endSlide": 31,
+      "quizSlide": 31
+    },
+    {
+      "id": 6,
+      "num": "06",
+      "title": "A Carteira Blindada, Rebalanceamento & Liberdade",
+      "startSlide": 32,
+      "endSlide": 37,
+      "quizSlide": 37
+    },
+    {
+      "id": 7,
+      "num": "07",
+      "title": "Dashboard Executivo & Certificação Oficial",
+      "startSlide": 38,
+      "endSlide": 38,
+      "quizSlide": null
+    }
+  ];
 
   // Estado da Aplicação
   const state = {
     currentSlide: 1,
-    totalSlides: 34,
-    maxDemoSlide: 8, // Slides 1 a 8 liberados na demonstração (Módulos 01 e 02)
+    totalSlides: 38,
+    maxDemoSlide: 7, // Slides 1 a 8 liberados na demonstração (Módulo 01)
     isUnlocked: false,
     isGestor: false,
     intendedSlide: null,
@@ -114,7 +82,15 @@
       '667dd167ca25703d48208f61810399ea00d671ec39ec8c05e32ac499c09ce92a', // CYBER-PRO-2026-X9K
       '31f76bd6e275f2a0b9f7c17c93bd2af763ae933b2f8ca1e042bf69a7dd4a1c1d', // CYBERPRO2026X9K
       '8c8c1fee9a2fec548c42cf5915d272d7bf638df3241d62d7a9ce7467d4ed5404', // ALUNO-CYBER-8842
-      '142d97345d0069ccd1d3a6deb8542fea5f8205f33d46b9a1d376370c1152fe5b'  // ALUNOCYBER8842
+      '142d97345d0069ccd1d3a6deb8542fea5f8205f33d46b9a1d376370c1152fe5b'  // ALUNOCYBER8842,
+      'fbd0d37d44f58a19a3670b0ac9476a698e450c1eab5b9d7c2bd2acd12d5763af', // INVEST-PRO-2026,
+      'fd9fb3bab594aed2cd1bb0294542a6669f4041db3f2ca8659eb7f429229eb1e5', // INVESTPRO2026,
+      '10f67fa2317d425a31fd5f34c0485886d193f344c4f89b127ec3f3d396f7c0be', // ALUNO-INVEST-2026,
+      '688a91ad9b5fd1c4bb75af092bcfe1159ca891c6d13de1aaa75a6d9094e5e5ef', // ALUNOINVEST2026,
+      'c89b2b6105466b891f0d75ab6c8eb2d2b8af3f7bebe7b64e6e56e5578295ac79', // INVEST2026VIP,
+      '87d283127b6fd9aec1c8816861dab0402988acf45717dae7fbb8a3e39e0752c1', // INVEST-VIP-2026,
+      '0ca6a950d809be14c43051487abaeda945084bf3aec4c423860682f982b10696', // INVESTVIP2026,
+      '6f3017fb8e1f6300ee8ad920c6b4d807f8f898750f6da7e36ce574a3341abd16', // INV-2026-VIP
     ],
     isFullscreen: false,
     isOverviewOpen: false,
@@ -129,7 +105,7 @@
     isStudentIdModalOpen: false,
     certIssued: false,
     certFirstIssueDate: '',
-    studentName: 'Colaborador(a) Exemplar',
+    studentName: 'Investidor(a) Estratégico(a)',
     studentCpf: '000.000.000-00',
     touchStartX: 0,
     touchStartY: 0,
@@ -391,27 +367,27 @@
    */
   function loadSavedProgress() {
     try {
-      const savedQuizzes = localStorage.getItem('cybersec_quizzes');
+      const savedQuizzes = localStorage.getItem('invest_quizzes');
       if (savedQuizzes) state.quizzes = JSON.parse(savedQuizzes);
 
-      const savedReg = localStorage.getItem('cybersec_student_registered');
+      const savedReg = localStorage.getItem('invest_student_registered');
       if (savedReg === 'true') {
         state.isStudentRegistered = true;
       }
 
-      const savedName = localStorage.getItem('cybersec_student_name');
+      const savedName = localStorage.getItem('invest_student_name');
       if (savedName && !savedName.toLowerCase().includes('claudinei')) {
         state.studentName = savedName;
       }
-      const savedCpf = localStorage.getItem('cybersec_student_cpf');
+      const savedCpf = localStorage.getItem('invest_student_cpf');
       if (savedCpf) {
         state.studentCpf = savedCpf;
       }
 
-      const certIssued = localStorage.getItem('cybersec_cert_issued');
+      const certIssued = localStorage.getItem('invest_cert_issued');
       if (certIssued === 'true') {
         state.certIssued = true;
-        state.certFirstIssueDate = localStorage.getItem('cybersec_cert_first_date') || '';
+        state.certFirstIssueDate = localStorage.getItem('invest_cert_first_date') || '';
       }
     } catch (e) {
       console.warn('Não foi possível acessar localStorage:', e);
@@ -423,10 +399,10 @@
    */
   function saveProgress() {
     try {
-      localStorage.setItem('cybersec_quizzes', JSON.stringify(state.quizzes));
-      localStorage.setItem('cybersec_student_name', state.studentName);
-      localStorage.setItem('cybersec_student_cpf', state.studentCpf || '');
-      localStorage.setItem('cybersec_student_registered', state.isStudentRegistered ? 'true' : 'false');
+      localStorage.setItem('invest_quizzes', JSON.stringify(state.quizzes));
+      localStorage.setItem('invest_student_name', state.studentName);
+      localStorage.setItem('invest_student_cpf', state.studentCpf || '');
+      localStorage.setItem('invest_student_registered', state.isStudentRegistered ? 'true' : 'false');
     } catch (e) {
       console.warn('Erro ao salvar no localStorage:', e);
     }
@@ -499,12 +475,12 @@
     dom.drawerModulesContainer.innerHTML = '';
 
     let completedModulesCount = 0;
-    const totalCoreModules = 10;
+    const totalCoreModules = 6;
 
     modulesMeta.forEach(mod => {
       const isQuizDone = mod.quizSlide ? (state.quizzes[mod.id] && state.quizzes[mod.id].correct) : false;
       const isCurrentMod = state.currentSlide >= mod.startSlide && state.currentSlide <= mod.endSlide;
-      const isLocked = !state.isUnlocked && mod.id > 2;
+      const isLocked = !state.isUnlocked && mod.id > 1;
       if (isQuizDone) completedModulesCount++;
 
       const card = document.createElement('div');
@@ -513,7 +489,7 @@
       let statusHtml = '<span class="drawer-module-status">⚪ Em aberto</span>';
       if (isLocked) {
         statusHtml = '<span class="drawer-module-locked-tag">🔒 Alunos</span>';
-      } else if (mod.id === 11) {
+      } else if (mod.id === 7) {
         statusHtml = '<span class="drawer-module-status completed">★ Certificação</span>';
       } else if (isQuizDone) {
         statusHtml = '<span class="drawer-module-status completed">✅ Concluído (100%)</span>';
@@ -812,7 +788,7 @@
   function updateDashboardStats() {
     let completedQuizzes = 0;
     let totalScore = 0;
-    const totalQuizzes = 10;
+    const totalQuizzes = 6;
 
     for (let i = 1; i <= totalQuizzes; i++) {
       if (state.quizzes[i] && state.quizzes[i].correct) {
@@ -848,16 +824,16 @@
   function generateStudentAuthCode(name, cpf) {
     const cleanName = (name || '').trim().toUpperCase();
     const cleanCpf = (cpf || '').replace(/\D/g, '');
-    const seed = `${cleanName || 'ALUNO'}|${cleanCpf || '00000000000'}|CYBER-EXEC-2026-AUTH`;
+    const seed = `${cleanName || 'ALUNO'}|${cleanCpf || '00000000000'}|INVEST-FIN-2026-AUTH`;
     const hash = sha256(seed).toUpperCase();
-    return `SEC-2026-${hash.slice(0, 4)}-${hash.slice(4, 8)}`;
+    return `INV-2026-${hash.slice(0, 4)}-${hash.slice(4, 8)}`;
   }
 
   /**
    * Atualiza os dados textuais do aluno no certificado e na barra oficial
    */
   function updateCertDisplays() {
-    const name = (state.studentName || '').trim() || 'Colaborador(a) Exemplar';
+    const name = (state.studentName || '').trim() || 'Investidor(a) Estratégico(a)';
     const cpf = (state.studentCpf || '').trim() || '000.000.000-00';
 
     const certDisplayName = document.getElementById('cert-display-name');
@@ -940,8 +916,8 @@
       const nowIso = new Date().toISOString();
       state.certFirstIssueDate = nowIso;
       try {
-        localStorage.setItem('cybersec_cert_issued', 'true');
-        localStorage.setItem('cybersec_cert_first_date', nowIso);
+        localStorage.setItem('invest_cert_issued', 'true');
+        localStorage.setItem('invest_cert_first_date', nowIso);
       } catch (e) {}
 
       // Imprime 1ª via original limpa
@@ -1467,6 +1443,12 @@
     'GESTOR',
     'ADMIN',
     'MASTER',
+    'INVESTMASTER',
+    'INVEST-MASTER',
+    'INVEST-PRO-2026',
+    'INVESTPRO2026',
+    'INVEST2026VIP',
+    'INVEST-VIP',
     'CYBERMASTER',
     'CYBER-MASTER',
     'GESTAO',
@@ -1526,13 +1508,13 @@
 
       if (accessParam && isKeyValid(accessParam)) {
         const isMaster = isGestorKey(accessParam);
-        unlockCourse(true, isMaster ? '👑 Modo Gestor Ativado! Todos os 34 slides e módulos liberados sem restrições.' : '🎉 Acesso Completo Ativado via Link! Bem-vindo(a) ao treinamento.', isMaster);
+        unlockCourse(true, isMaster ? '👑 Modo Gestor Ativado! Todos os 38 slides e módulos liberados sem restrições.' : '🎉 Acesso Completo Ativado via Link! Bem-vindo(a) ao treinamento.', isMaster);
         return;
       }
 
       // 3. Verificação de Chave/Token persistido em localStorage
-      const savedUnlock = localStorage.getItem('cybersec_course_unlocked');
-      const savedRole = localStorage.getItem('cybersec_user_role');
+      const savedUnlock = localStorage.getItem('invest_course_unlocked');
+      const savedRole = localStorage.getItem('invest_user_role');
       if (savedUnlock === 'true') {
         state.isUnlocked = true;
         if (savedRole === 'gestor') {
@@ -1557,10 +1539,10 @@
       state.isStudentRegistered = true;
     }
     try {
-      localStorage.setItem('cybersec_course_unlocked', 'true');
+      localStorage.setItem('invest_course_unlocked', 'true');
       if (state.isGestor) {
-        localStorage.setItem('cybersec_user_role', 'gestor');
-        localStorage.setItem('cybersec_student_registered', 'true');
+        localStorage.setItem('invest_user_role', 'gestor');
+        localStorage.setItem('invest_student_registered', 'true');
       }
     } catch (e) {}
 
@@ -1589,14 +1571,14 @@
     state.isUnlocked = false;
     state.isGestor = false;
     try {
-      localStorage.removeItem('cybersec_course_unlocked');
-      localStorage.removeItem('cybersec_user_role');
+      localStorage.removeItem('invest_course_unlocked');
+      localStorage.removeItem('invest_user_role');
     } catch (e) {}
 
     updateUnlockUI();
     buildOverviewGrid();
     renderModulesDrawer();
-    showToast('Modo demonstração ativado (módulos 3 a 11 bloqueados para teste).', 'info');
+    showToast('Modo demonstração ativado (módulos 2 a 6 bloqueados para teste).', 'info');
     if (state.currentSlide > state.maxDemoSlide) {
       goToSlide(1);
     }
@@ -1610,7 +1592,7 @@
         dom.btnHeaderUnlock.classList.add('gestor');
         if (dom.accessBadgeText) dom.accessBadgeText.textContent = '👑 Modo Gestor';
         if (dom.badgeActionLabel) dom.badgeActionLabel.textContent = '• Totalmente Liberado';
-        dom.btnHeaderUnlock.title = 'Modo Gestor Ativo: todos os 34 slides e módulos liberados. Clique para opções.';
+        dom.btnHeaderUnlock.title = 'Modo Gestor Ativo: todos os 38 slides e módulos liberados. Clique para opções.';
       } else {
         dom.btnHeaderUnlock.classList.remove('gestor');
         if (dom.accessBadgeText) dom.accessBadgeText.textContent = 'Acesso Completo';
@@ -1692,7 +1674,7 @@
 
       setTimeout(() => {
         if (dom.btnSubmitUnlock) dom.btnSubmitUnlock.disabled = false;
-        unlockCourse(true, isMaster ? '👑 Modo Gestor Ativado! Todos os 34 slides e módulos liberados.' : '🎉 Parabéns! Acesso completo liberado com sucesso.', isMaster);
+        unlockCourse(true, isMaster ? '👑 Modo Gestor Ativado! Todos os 38 slides e módulos liberados.' : '🎉 Parabéns! Acesso completo liberado com sucesso.', isMaster);
       }, 500);
     } else {
       if (dom.unlockStatusMsg) {
@@ -1730,8 +1712,8 @@
         if (state.isUnlocked) {
           const alternar = confirm(
             "👑 MODO GESTOR / ACESSO COMPLETO ATIVO\n\n" +
-            "• Todos os 34 slides e módulos estão liberados para navegação e gestão.\n\n" +
-            "Deseja alternar temporariamente para o 'Modo Aluno Demonstração' (para testar o bloqueio dos módulos 3 a 11)?"
+            "• Todos os 38 slides e módulos estão liberados para navegação e gestão.\n\n" +
+            "Deseja alternar temporariamente para o 'Modo Aluno Demonstração' (para testar o bloqueio dos módulos 2 a 6)?"
           );
           if (alternar) {
             lockCourse();

@@ -1,0 +1,621 @@
+# -*- coding: utf-8 -*-
+"""
+Gerador de landing.html para o curso 'Como investir e gerenciar o seu dinheiro'.
+"""
+
+def generate_landing():
+    html = '''<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Como Investir e Gerenciar o Seu Dinheiro | Formação Executiva Prática 2026</title>
+  <meta name="description" content="Como Investir e Gerenciar o Seu Dinheiro. Formação 100% interativa com 6 módulos práticos, 6 desafios com tomada de decisão da vida real, renda fixa, ações, FIIs, criptoativos e certificação oficial em PDF.">
+  <meta name="keywords" content="como investir e gerenciar dinheiro, finanças pessoais, renda fixa, tesouro direto, ações dividendos, fundos imobiliários fiis, bitcoin criptoativos, orçamento 50 30 20">
+  <meta name="author" content="Claudinei Gonçalves de Lima | Cyber Executive">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#090d16">
+
+  <!-- Favicon e Ícones -->
+  <link rel="icon" type="image/svg+xml" href="imagens/logo-cyber-executive.svg">
+  <link rel="alternate icon" href="imagens/logo-cyber-executive.png">
+  <link rel="apple-touch-icon" href="imagens/logo-cyber-executive.png">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://cyberexecutive.github.io/invest/landing.html">
+
+  <!-- Open Graph / Facebook / WhatsApp / LinkedIn -->
+  <meta property="og:site_name" content="Invest Pro 2026">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://cyberexecutive.github.io/invest/landing.html">
+  <meta property="og:title" content="Como Investir e Gerenciar o Seu Dinheiro | Formação Prática">
+  <meta property="og:description" content="Treinamento 100% interativo, prático e sem vídeos monótonos. 6 módulos, 6 desafios da vida real com tomada de decisão e Certificado Executivo Oficial.">
+  <meta property="og:image" content="https://cyberexecutive.github.io/invest/imagens/anuncio-hotmart-1x1.jpg">
+  <meta property="og:image:alt" content="Como Investir e Gerenciar o Seu Dinheiro - Formação 2026">
+  <meta property="og:locale" content="pt_BR">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Como Investir e Gerenciar o Seu Dinheiro | Invest Pro 2026">
+  <meta name="twitter:description" content="Domine seu orçamento, saia das armadilhas dos grandes bancos, bata a inflação com Renda Fixa e monte uma carteira blindada global e cripto.">
+  <meta name="twitter:image" content="https://cyberexecutive.github.io/invest/imagens/anuncio-hotmart-1x1.jpg">
+
+  <!-- Estilos e Fontes -->
+  <link rel="stylesheet" href="css/landing.css?v=3.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@700;800&display=swap" rel="stylesheet">
+
+  <!-- Dados Estruturados Schema.org (JSON-LD) para Google Search -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Course",
+        "@id": "https://cyberexecutive.github.io/invest/landing.html#course",
+        "name": "Como Investir e Gerenciar o Seu Dinheiro",
+        "description": "Formação executiva e individual em finanças pessoais e investimentos: Mentalidade Financeira, Orçamento sem Neura, Faxina de Dívidas, Renda Fixa Inteligente, Ações de Valor, Fundos Imobiliários (FIIs), Criptoativos e Carteira Blindada Global.",
+        "provider": {
+          "@type": "Organization",
+          "name": "Cyber Executive",
+          "url": "https://cyberexecutive.github.io/invest/"
+        },
+        "educationalCredentialAwarded": "Certificado de Formação Executiva em Gestão Financeira & Investimentos Estratégicos (6 Horas)",
+        "inLanguage": "pt-BR",
+        "hasCourseInstance": {
+          "@type": "CourseInstance",
+          "courseMode": "online",
+          "courseWorkload": "PT6H"
+        },
+        "offers": [
+          {
+            "@type": "Offer",
+            "name": "Acesso Vitalício Individual",
+            "price": "47.00",
+            "priceCurrency": "BRL",
+            "availability": "https://schema.org/InStock",
+            "url": "https://pay.kiwify.com.br/E63o3Rc",
+            "category": "Kiwify Checkout"
+          },
+          {
+            "@type": "Offer",
+            "name": "Acesso Vitalício Individual",
+            "price": "47.00",
+            "priceCurrency": "BRL",
+            "availability": "https://schema.org/InStock",
+            "url": "https://pay.hotmart.com/H108332477H",
+            "category": "Hotmart Checkout"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://cyberexecutive.github.io/invest/landing.html#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Como recebo o acesso ao treinamento após a compra?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "O acesso é liberado instantaneamente! Assim que o seu pagamento (PIX ou cartão) for aprovado, você recebe um e-mail com a chave de acesso e o link direto para navegar no seu computador, tablet ou celular."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "O certificado tem validade formal?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sim! O certificado é emitido com carga horária de 6 horas, data de conclusão, código criptográfico individual INV-2026 e assinatura executiva formal do CEO Claudinei Gonçalves de Lima, válido para comprovação de horas complementares e enriquecimento curricular."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Preciso ter muito dinheiro para começar a aplicar o que aprendo?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "De forma alguma! Você aprende a investir no Tesouro Direto com cerca de R$ 35, em cotas de Fundos Imobiliários com R$ 10 e em frações de Bitcoin com qualquer quantia a partir de R$ 20. O mais importante é o método e a consistência."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "O curso ensina 'Day Trade' ou promessas de ganho rápido?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Não! O curso é 100% baseado em fundamentos testados pelos maiores investidores do mundo (Warren Buffett, Peter Lynch, Luiz Barsi, Ray Dalio). Nós ensinamos a construir patrimônio sólido e duradouro com responsabilidade, fugindo de pirâmides e especulações perigosas."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Em quanto tempo consigo concluir o curso?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "O formato é de microlearning dinâmico e interativo. A maioria dos participantes conclui todas as lições práticas e os 6 quizzes em cerca de 4 a 6 horas de estudo focado, avançando no seu próprio ritmo."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ==========================================
+       HEADER & NAVEGAÇÃO
+       ========================================== -->
+  <header class="lp-header">
+    <div class="lp-container lp-nav-content">
+      <a href="#" class="lp-brand">
+        <img src="imagens/logo-cyber-executive.png" alt="Cyber Executive Logo" class="lp-brand-logo-img" />
+        <span>INVEST <span class="lp-text-gradient-cyan">PRO 2026</span></span>
+      </a>
+
+      <nav class="lp-nav-links">
+        <li><a href="#diferenciais" class="lp-nav-link">Metodologia</a></li>
+        <li><a href="#modulos" class="lp-nav-link">Conteúdo (6 Módulos)</a></li>
+        <li><a href="#certificado" class="lp-nav-link">Certificado</a></li>
+        <li><a href="#faq" class="lp-nav-link">Dúvidas</a></li>
+      </nav>
+
+      <div style="display: flex; align-items: center; gap: 12px;">
+        <a href="index.html" class="lp-btn lp-btn-secondary" style="padding: 9px 18px; font-size: 0.9rem;" title="Testar o treinamento na prática">
+          🎮 Demonstração
+        </a>
+        <a href="#inscricao" class="lp-btn lp-btn-primary" style="padding: 10px 22px; font-size: 0.92rem;">
+          Garantir Vaga
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================
+       HERO SECTION
+       ========================================== -->
+  <section class="lp-hero">
+    <div class="lp-container">
+      <div class="lp-hero-grid">
+        <div class="lp-hero-text">
+          <div class="lp-badge lp-badge-cyan">
+            📈 FORMAÇÃO PRÁTICA 2026 • DO ZERO AO AVANÇADO
+          </div>
+
+          <h1 class="lp-hero-headline">
+            Como Investir e Gerenciar <span class="lp-text-gradient-cyan">o Seu Dinheiro</span> sem Complicação
+          </h1>
+
+          <p class="lp-hero-sub">
+            Um treinamento <strong>100% interativo, prático e sem vídeos cansativos</strong>. Domine seu orçamento, saia das armadilhas dos grandes bancos, bata a inflação com Renda Fixa Inteligente, lucre com Ações e FIIs, proteja seu patrimônio com Criptoativos e receba seu <strong>Certificado Oficial Executivo</strong>.
+          </p>
+
+          <div class="lp-hero-actions">
+            <a href="#inscricao" class="lp-btn lp-btn-primary lp-btn-lg">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+              Quero Me Capacitar Agora
+            </a>
+
+            <a href="index.html" class="lp-btn lp-btn-secondary lp-btn-lg">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+              Ver Demonstração Interativa
+            </a>
+          </div>
+
+          <div class="lp-trust-row">
+            <div class="lp-trust-item">
+              <svg class="lp-trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>6 Horas de Carga Horária</span>
+            </div>
+            <div class="lp-trust-item">
+              <svg class="lp-trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>6 Quizzes da Vida Real</span>
+            </div>
+            <div class="lp-trust-item">
+              <svg class="lp-trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Certificado Executivo Assinado</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mockup Visual do Treinamento -->
+        <div class="lp-hero-mockup-wrapper">
+          <div class="lp-mockup-glow"></div>
+          <div class="lp-mockup-card">
+            <div class="lp-mockup-top">
+              <div class="lp-dots">
+                <span class="lp-dot lp-dot-red"></span>
+                <span class="lp-dot lp-dot-yellow"></span>
+                <span class="lp-dot lp-dot-green"></span>
+              </div>
+              <span class="lp-mockup-title">Simulação Interativa de Tomada de Decisão</span>
+            </div>
+            <img src="imagens/quiz-preview.jpg" alt="Simulação de Cenário Real de Investimentos" class="lp-mockup-preview-img">
+            <div class="lp-mockup-floating-badge">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <span>+10 Pontos de Inteligência Financeira</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       ESTATÍSTICAS & O PROBLEMA
+       ========================================== -->
+  <section class="lp-section" style="background: rgba(255, 255, 255, 0.015); border-top: 1px solid rgba(255,255,255,0.05); border-bottom: 1px solid rgba(255,255,255,0.05);">
+    <div class="lp-container">
+      <div class="lp-section-header">
+        <div class="lp-badge lp-badge-gold">O Custo da Falta de Educação Financeira</div>
+        <h2 class="lp-section-title">Não é o Quanto Você Ganha, <span class="lp-text-gradient-gold">é o Quanto Você Constrói</span></h2>
+        <p class="lp-section-desc">Milhares de profissionais com salários expressivos vivem sufocados e endividados por desconhecerem as regras fundamentais do jogo do dinheiro.</p>
+      </div>
+
+      <div class="lp-stats-grid">
+        <div class="lp-stat-card">
+          <div class="lp-stat-number lp-text-gradient-cyan">78%</div>
+          <h3 class="lp-stat-label">Das Famílias Endividadas</h3>
+          <p class="lp-stat-desc">Enfrentam juros abusivos de cartão de crédito e cheque especial por falta de planejamento de fluxo e reserva.</p>
+        </div>
+
+        <div class="lp-stat-card">
+          <div class="lp-stat-number lp-text-gradient-gold">R$ 380k</div>
+          <h3 class="lp-stat-label">Patrimônio com R$ 500/mês</h3>
+          <p class="lp-stat-desc">Acumulado em 20 anos a juros compostos conservadores, onde R$ 260.000 são puros rendimentos a seu favor.</p>
+        </div>
+
+        <div class="lp-stat-card">
+          <div class="lp-stat-number" style="color: #34d399;">15 Min</div>
+          <h3 class="lp-stat-label">Rebalanceamento Mensal</h3>
+          <p class="lp-stat-desc">É todo o tempo necessário para gerenciar uma carteira blindada e deixar os juros compostos trabalhando no piloto automático.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       DIFERENCIAIS / METODOLOGIA
+       ========================================== -->
+  <section class="lp-section" id="diferenciais">
+    <div class="lp-container">
+      <div class="lp-section-header">
+        <div class="lp-badge lp-badge-cyan">Metodologia Revolucionária</div>
+        <h2 class="lp-section-title">Aprenda com Leveza, Bom Humor e Prática Real</h2>
+        <p class="lp-section-desc">Design responsivo imersivo, sem rolagem desnecessária e com aprendizado dinâmico por microlearning.</p>
+      </div>
+
+      <div class="lp-features-grid">
+        <div class="lp-feature-card">
+          <div class="lp-feature-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+          </div>
+          <h3 class="lp-feature-title">Microlearning Executivo</h3>
+          <p class="lp-feature-desc">Lições práticas e diretas ao ponto. Absorva princípios testados pelos maiores mestres do mercado em minutos, sem perder tempo com teorias vazias.</p>
+        </div>
+
+        <div class="lp-feature-card">
+          <div class="lp-feature-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          </div>
+          <h3 class="lp-feature-title">Simulações do Dia a Dia</h3>
+          <p class="lp-feature-desc">Cada módulo tem um desafio prático: o bônus na conta, o carro quebrado no fim do mês, o gerente oferecendo capitalização e a dica do primo no churrasco.</p>
+        </div>
+
+        <div class="lp-feature-card">
+          <div class="lp-feature-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          </div>
+          <h3 class="lp-feature-title">Criptoativos com Segurança</h3>
+          <p class="lp-feature-desc">Entenda o papel real do Bitcoin como reserva matemática, diferencie projetos sérios de golpes e aprenda custódia fria (cold wallets).</p>
+        </div>
+
+        <div class="lp-feature-card">
+          <div class="lp-feature-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+          </div>
+          <h3 class="lp-feature-title">Certificado Formal</h3>
+          <p class="lp-feature-desc">Ao concluir a formação, emita seu certificado oficial executivo com carga horária de 6h, código de autenticidade criptográfico e assinatura institucional.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       GRADE CURRICULAR COMPLETA (6 MÓDULOS)
+       ========================================== -->
+  <section class="lp-section" id="modulos" style="background: rgba(255, 255, 255, 0.015);">
+    <div class="lp-container">
+      <div class="lp-section-header">
+        <div class="lp-badge lp-badge-gold">Currículo Abrangente</div>
+        <h2 class="lp-section-title">O Que Você Vai Aprender nos 6 Módulos Práticos</h2>
+        <p class="lp-section-desc">Uma jornada estruturada do básico ao avançado para colocar sua vida financeira nos trilhos com autonomia definitiva.</p>
+      </div>
+
+      <div class="lp-modules-container">
+        <!-- Módulo 01 -->
+        <div class="lp-module-item">
+          <div class="lp-module-badge">Módulo 01</div>
+          <h3 class="lp-module-title">Mentalidade Financeira &amp; O Jogo do Dinheiro</h3>
+          <p class="lp-module-desc">O paradoxo do salário alto, inflação do estilo de vida, as regras de ouro de Warren Buffett, o sistema dos 3 potes e raio-x dos vazamentos.</p>
+          <div class="lp-module-topics">
+            <span class="lp-module-pill">Ativo vs Passivo</span>
+            <span class="lp-module-pill">Juros Compostos</span>
+            <span class="lp-module-pill">Quiz 01</span>
+          </div>
+        </div>
+
+        <!-- Módulo 02 -->
+        <div class="lp-module-item">
+          <div class="lp-module-badge" style="color: #f59e0b;">Módulo 02</div>
+          <h3 class="lp-module-title">Orçamento sem Neura, Faxina &amp; Reserva Anti-Crise</h3>
+          <p class="lp-module-desc">O método 50/30/20 simplificado, eliminação de boletos fantasmas, uso mestre do cartão sem juros, o método bola de neve e a sagrada reserva de emergência.</p>
+          <div class="lp-module-topics">
+            <span class="lp-module-pill">Método 50/30/20</span>
+            <span class="lp-module-pill">Zero Dívidas</span>
+            <span class="lp-module-pill">Quiz 02</span>
+          </div>
+        </div>
+
+        <!-- Módulo 03 -->
+        <div class="lp-module-item">
+          <div class="lp-module-badge">Módulo 03</div>
+          <h3 class="lp-module-title">Renda Fixa Inteligente &amp; O Fim da Poupança</h3>
+          <p class="lp-module-desc">Por que a poupança perde para a inflação, o guia do Tesouro Direto (Selic, IPCA+, Prefixado), CDBs, LCIs e LCAs isentas de IR e a garantia do FGC até R$ 250k.</p>
+          <div class="lp-module-topics">
+            <span class="lp-module-pill">Tesouro Selic/IPCA</span>
+            <span class="lp-module-pill">LCI/LCA Isenta</span>
+            <span class="lp-module-pill">Quiz 03</span>
+          </div>
+        </div>
+
+        <!-- Módulo 04 -->
+        <div class="lp-module-item">
+          <div class="lp-module-badge">Módulo 04</div>
+          <h3 class="lp-module-title">Renda Variável: Ações de Valor, Dividendos &amp; FIIs</h3>
+          <p class="lp-module-desc">Virando sócio de grandes empresas (sem day trade), Fundos Imobiliários e aluguel mensal isento, a filosofia Barsi/Lynch, o filtro BESST e psicologia de mercado.</p>
+          <div class="lp-module-topics">
+            <span class="lp-module-pill">FIIs de Tijolo</span>
+            <span class="lp-module-pill">Método BESST</span>
+            <span class="lp-module-pill">Quiz 04</span>
+          </div>
+        </div>
+
+        <!-- Módulo 05 -->
+        <div class="lp-module-item">
+          <div class="lp-module-badge" style="color: #a855f7;">Módulo 05</div>
+          <h3 class="lp-module-title">Criptoativos, Bitcoin &amp; A Nova Fronteira Digital</h3>
+          <p class="lp-module-desc">O que é o Bitcoin e a escassez dos 21 milhões, separando projetos sérios de pirâmides e memecoins, custódia pessoal (cold wallets), estratégia DCA e alocação segura.</p>
+          <div class="lp-module-topics">
+            <span class="lp-module-pill">Ouro Digital</span>
+            <span class="lp-module-pill">Cold Wallets</span>
+            <span class="lp-module-pill">Quiz 05</span>
+          </div>
+        </div>
+
+        <!-- Módulo 06 -->
+        <div class="lp-module-item" style="border-color: rgba(245, 158, 11, 0.4); background: rgba(245, 158, 11, 0.04);">
+          <div class="lp-module-badge" style="color: #fbbf24;">Módulo 06 • Avançado</div>
+          <h3 class="lp-module-title">A Carteira Blindada, Rebalanceamento &amp; Liberdade</h3>
+          <p class="lp-module-desc">O portfólio All-Weather de Ray Dalio, internacionalização com ETFs em dólar, o número da liberdade e a regra dos 4%, rebalanceamento em 15 minutos e os 5 mandamentos.</p>
+          <div class="lp-module-topics">
+            <span class="lp-module-pill">Ray Dalio</span>
+            <span class="lp-module-pill">Regra dos 4%</span>
+            <span class="lp-module-pill">Quiz 06</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       DESTAQUE DO CERTIFICADO OFICIAL
+       ========================================== -->
+  <section class="lp-section lp-cert-section" id="certificado">
+    <div class="lp-container">
+      <div class="lp-cert-grid">
+        <div class="lp-cert-preview-wrapper">
+          <img src="imagens/certificado-preview.jpg" alt="Certificado Oficial de Formação em Investimentos" class="lp-cert-preview-img">
+        </div>
+
+        <div class="lp-cert-info">
+          <div class="lp-badge lp-badge-gold">Certificação Executiva Inclusa</div>
+          <h2 class="lp-section-title">Comprove Suas Conquistas com Reconhecimento Formal</h2>
+          <p class="lp-section-desc">
+            Documento de alto padrão executivo, personalizado com seus dados oficiais, pronto para impressão em alta definição e validação pública.
+          </p>
+
+          <ul class="lp-cert-feature-list">
+            <li class="lp-cert-feature-item">
+              <svg class="lp-check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span><strong>Carga Horária Formal:</strong> 6 Horas de capacitação prática executiva.</span>
+            </li>
+            <li class="lp-cert-feature-item">
+              <svg class="lp-check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span><strong>Assinatura Institucional:</strong> Subscrito pela Direção Executiva (Claudinei Gonçalves de Lima - CEO).</span>
+            </li>
+            <li class="lp-cert-feature-item">
+              <svg class="lp-check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span><strong>Código de Autenticidade:</strong> Registro de emissão individual (ex.: INV-2026-8942-BR).</span>
+            </li>
+            <li class="lp-cert-feature-item">
+              <svg class="lp-check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span><strong>Válido Nacionalmente:</strong> Para enriquecimento curricular, horas complementares e formação profissional.</span>
+            </li>
+          </ul>
+
+          <a href="#inscricao" class="lp-btn lp-btn-gold lp-btn-lg">
+            Garantir Minha Certificação Agora
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       TABELA DE PREÇO & OFERTA ESPECIAL
+       ========================================== -->
+  <section class="lp-section" id="inscricao">
+    <div class="lp-container">
+      <div class="lp-section-header">
+        <div class="lp-badge lp-badge-cyan">Acesso Imediato</div>
+        <h2 class="lp-section-title">Comece a Multiplicar Seu Patrimônio Hoje</h2>
+        <p class="lp-section-desc">Condição especial de lançamento por tempo limitado com acesso vitalício e suporte a atualizações 2026.</p>
+      </div>
+
+      <div class="lp-pricing-wrapper">
+        <!-- Plano Individual -->
+        <div class="lp-pricing-card lp-pricing-card-featured">
+          <div class="lp-pricing-tag">Melhor Custo-Benefício</div>
+          <h3 class="lp-pricing-title">Acesso Completo Individual</h3>
+          <p class="lp-pricing-desc">Acesso total para quem deseja assumir o controle definitivo do próprio dinheiro e investir com segurança.</p>
+
+          <div class="lp-price-box">
+            <div class="lp-price-old">De R$ 197,00</div>
+            <div class="lp-price-current">
+              <span class="lp-price-currency">R$</span>
+              <span class="lp-price-amount">47</span>
+              <span class="lp-text-muted" style="font-size: 1.1rem; font-weight: 700;">,00</span>
+            </div>
+            <div class="lp-price-installments">ou 5x de R$ 10,25 no cartão de crédito / PIX</div>
+          </div>
+
+          <ul class="lp-pricing-list">
+            <li class="lp-pricing-item">
+              <svg class="lp-check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Acesso vitalício aos <strong>6 Módulos (38 Slides)</strong></span>
+            </li>
+            <li class="lp-pricing-item">
+              <svg class="lp-check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span><strong>6 Casos Práticos</strong> com tomada de decisão da vida real</span>
+            </li>
+            <li class="lp-pricing-item">
+              <svg class="lp-check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span><strong>Certificado Executivo Oficial</strong> em PDF (com Nome e CPF)</span>
+            </li>
+            <li class="lp-pricing-item">
+              <svg class="lp-check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Compatível com celular, tablet e computador</span>
+            </li>
+          </ul>
+
+          <!-- OPÇÕES OFICIAIS DE CHECKOUT LADO A LADO -->
+          <div class="lp-checkout-grid">
+            <a href="https://pay.kiwify.com.br/E63o3Rc" class="lp-btn lp-btn-kiwify lp-btn-clean" target="_blank" rel="noopener" id="btn-checkout-kiwify" style="border-radius: 9999px !important;">
+              PAGAR VIA KIWIFY
+            </a>
+            <a href="https://pay.hotmart.com/H108332477H" class="lp-btn lp-btn-hotmart lp-btn-clean" target="_blank" rel="noopener" id="btn-checkout-hotmart" style="border-radius: 9999px !important;">
+              PAGAR VIA HOTMART
+            </a>
+          </div>
+          <p style="text-align: center; font-size: 0.82rem; color: var(--lp-text-muted); margin-top: 14px;">
+            🔒 Pagamento 100% Seguro (PIX, Cartão ou Boleto)
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Garantia -->
+      <div class="lp-guarantee-box">
+        <svg class="lp-guarantee-badge" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="10"/>
+          <path d="M12 8v4l3 3"/>
+        </svg>
+        <div class="lp-guarantee-text">
+          <h4>Garantia Incondicional de 7 Dias</h4>
+          <p>
+            Você tem 7 dias completos para testar a plataforma, responder aos desafios práticos e avaliar o conteúdo. Se achar que não valeu a pena, basta nos avisar e devolvemos 100% do seu investimento na hora, sem burocracia nem perguntas.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       PERGUNTAS FREQUENTES (FAQ)
+       ========================================== -->
+  <section class="lp-section" id="faq" style="background: rgba(255, 255, 255, 0.015);">
+    <div class="lp-container">
+      <div class="lp-section-header">
+        <div class="lp-badge lp-badge-cyan">Tire Suas Dúvidas</div>
+        <h2 class="lp-section-title">Perguntas Frequentes</h2>
+      </div>
+
+      <div class="lp-faq-container">
+        <div class="lp-faq-item">
+          <button class="lp-faq-question">
+            <span>Como recebo o acesso ao treinamento após a compra?</span>
+            <svg class="lp-faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="lp-faq-answer">
+            <p>O acesso é liberado instantaneamente! Assim que o seu pagamento (PIX ou cartão) for aprovado, você recebe um e-mail com a chave de acesso e o link direto para navegar no seu computador, tablet ou celular.</p>
+          </div>
+        </div>
+
+        <div class="lp-faq-item">
+          <button class="lp-faq-question">
+            <span>O certificado tem validade formal?</span>
+            <svg class="lp-faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="lp-faq-answer">
+            <p>Sim! O certificado é emitido com carga horária de 6 horas, data de conclusão, código criptográfico individual INV-2026 e assinatura executiva formal do CEO Claudinei Gonçalves de Lima, válido para comprovação de horas complementares e enriquecimento curricular.</p>
+          </div>
+        </div>
+
+        <div class="lp-faq-item">
+          <button class="lp-faq-question">
+            <span>Preciso ter muito dinheiro para começar a aplicar o que aprendo?</span>
+            <svg class="lp-faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="lp-faq-answer">
+            <p>De forma alguma! Você aprende a investir no Tesouro Direto com cerca de R$ 35, em cotas de Fundos Imobiliários com R$ 10 e em frações de Bitcoin com qualquer quantia a partir de R$ 20. O mais importante é o método e a consistência.</p>
+          </div>
+        </div>
+
+        <div class="lp-faq-item">
+          <button class="lp-faq-question">
+            <span>O curso ensina 'Day Trade' ou promessas de ganho rápido?</span>
+            <svg class="lp-faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="lp-faq-answer">
+            <p>Não! O curso é 100% baseado em fundamentos testados pelos maiores investidores do mundo (Warren Buffett, Peter Lynch, Luiz Barsi, Ray Dalio). Nós ensinamos a construir patrimônio sólido e duradouro com responsabilidade, fugindo de pirâmides e especulações perigosas.</p>
+          </div>
+        </div>
+
+        <div class="lp-faq-item">
+          <button class="lp-faq-question">
+            <span>Em quanto tempo consigo concluir o curso?</span>
+            <svg class="lp-faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="lp-faq-answer">
+            <p>O formato é de microlearning dinâmico e interativo. A maioria dos participantes conclui todas as lições práticas e os 6 quizzes em cerca de 4 a 6 horas de estudo focado, avançando no seu próprio ritmo.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       RODAPÉ
+       ========================================== -->
+  <footer class="lp-footer">
+    <div class="lp-container">
+      <div class="lp-footer-links">
+        <a href="#modulos">Conteúdo</a>
+        <a href="#certificado">Certificação</a>
+        <a href="#inscricao">Inscrição</a>
+        <a href="index.html">Demonstração Interativa</a>
+      </div>
+      <p>© 2026 INVEST PRO • Como Investir e Gerenciar o Seu Dinheiro.</p>
+      <p style="margin-top: 6px; font-size: 0.8rem;">Formação prática executiva focada em patrimônio individual, educação financeira e investimentos estratégicos.</p>
+    </div>
+  </footer>
+
+  <script src="js/landing.js"></script>
+</body>
+</html>
+'''
+    with open(r"C:\invest\landing.html", "w", encoding="utf-8") as f:
+        f.write(html)
+    print("Sucesso! landing.html atualizado em C:\\invest\\landing.html")
+
+if __name__ == "__main__":
+    generate_landing()
