@@ -331,7 +331,7 @@
   });
 
   function init() {
-    state.totalSlides = dom.slides.length || 34;
+    state.totalSlides = dom.slides.length || 38;
     if (dom.totalNum) dom.totalNum.textContent = String(state.totalSlides).padStart(2, '0');
 
     // Carrega dados salvos em localStorage
@@ -350,7 +350,7 @@
     renderModulesDrawer();
     updateDashboardStats();
 
-    // Lê slide da URL hash se existir (#1 a #34)
+    // Lê slide da URL hash se existir (#1 a #38)
     const hash = window.location.hash.replace('#', '');
     const initialSlide = parseInt(hash, 10);
     if (!isNaN(initialSlide) && initialSlide >= 1 && initialSlide <= state.totalSlides) {
@@ -1067,7 +1067,7 @@
   }
 
   /**
-   * Configuração do Certificado (Slide 34)
+   * Configuração do Certificado (Slide 38)
    */
   function setupCertificate() {
     const certDateElem = document.getElementById('cert-date-display');

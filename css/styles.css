@@ -2334,9 +2334,9 @@ body.light-mode .zoomed-subtitle-large {
 }
 
 /* -------------------------------------------------------------
-   Certificado Oficial Corporativo (Slide 34)
+   Certificado Oficial Corporativo (Slide 38)
    ------------------------------------------------------------- */
-#slide-34 {
+#slide-38 {
   padding: clamp(6px, 1vh, 12px) clamp(10px, 1.2vw, 20px) !important;
   display: flex;
   flex-direction: column;
@@ -3617,7 +3617,7 @@ body.light-mode .zoomed-subtitle-large {
     height: 100% !important;
     overflow: visible !important;
   }
-  #top-progress-bar, .top-header, .bottom-dock, .modal-overlay, .card-modal-overlay, #modules-drawer, .cert-input-row, .cert-registered-bar, .cert-actions-bar, .fullscreen-notice-banner {
+  #top-progress-bar, .top-header, .bottom-dock, .modal-overlay, .card-modal-overlay, #modules-drawer, .cert-input-row, .cert-registered-bar, .cert-actions-bar, .fullscreen-notice-banner, .course-toast, #quiz-feedback-zoom-modal, .quiz-feedback-zoom-overlay, .lock-banner, #lock-curtain, .nav-floating-btn {
     display: none !important;
   }
   #presentation-viewport {
@@ -3626,10 +3626,10 @@ body.light-mode .zoomed-subtitle-large {
     width: 100% !important;
     height: 100% !important;
   }
-  .slide:not(#slide-34) {
+  .slide:not(#slide-38) {
     display: none !important;
   }
-  #slide-34 {
+  #slide-38 {
     display: flex !important;
     opacity: 1 !important;
     visibility: visible !important;
