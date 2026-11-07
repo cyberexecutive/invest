@@ -508,12 +508,6 @@ def generate_landing():
               PAGAR VIA HOTMART
             </a>
           </div>
-          <div class="lp-hotmart-links" style="margin-top: 10px; font-size: 0.82rem; color: var(--lp-text-muted); text-align: center;">
-            <a href="https://go.hotmart.com/T108385988V?dp=1" class="lp-link-subtle" target="_blank" rel="noopener" style="color: #38bdf8; text-decoration: none; display: inline-flex; align-items: center; gap: 5px;">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-              <span>Ver Página Oficial do Treinamento na Hotmart</span>
-            </a>
-          </div>
           <p style="text-align: center; font-size: 0.82rem; color: var(--lp-text-muted); margin-top: 14px;">
             🔒 Pagamento 100% Seguro (PIX, Cartão ou Boleto)
           </p>
@@ -610,8 +604,6 @@ def generate_landing():
         <a href="#modulos">Conteúdo</a>
         <a href="#certificado">Certificação</a>
         <a href="#inscricao">Inscrição</a>
-        <a href="https://kiwify.app/Nm42Cld" target="_blank" rel="noopener">Página Kiwify</a>
-        <a href="https://go.hotmart.com/T108385988V?dp=1" target="_blank" rel="noopener">Página Hotmart</a>
         <a href="index.html">Demonstração Interativa</a>
       </div>
       <p>© 2026 INVEST PRO • Como Investir e Gerenciar o Seu Dinheiro.</p>
@@ -619,7 +611,7 @@ def generate_landing():
     </div>
   </footer>
 
-  <script src="js/landing.js?v=4.9"></script>
+  <script src="js/landing.js?v=5.0"></script>
 </body>
 </html>
 '''
