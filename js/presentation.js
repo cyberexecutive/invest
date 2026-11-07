@@ -74,23 +74,17 @@
     isUnlocked: false,
     isGestor: false,
     intendedSlide: null,
-    validAccessHashes: [
-      '085301361b7d9548d2916efbed814b03cce46e6de7496dc04cc83f8aa6618b84', // CYBER-EXEC-8492-PRO
-      '18d37b403c70c6b36a3f77092e3e5ec148b6bd662f3ff3ebc8b250f723c4e8d5', // CYBEREXEC8492PRO
-      '0cedb0f9a64a63b1af95a6364dbaf49950293a82a9e32ea1cfc824c637f63595', // SEC-2026-VIP-9741
-      '4324d6bbee7f0836b80cc736fa81ec7ee78f6e0d879c33d6c3e2cb5f4610ae14', // SEC2026VIP9741
-      '667dd167ca25703d48208f61810399ea00d671ec39ec8c05e32ac499c09ce92a', // CYBER-PRO-2026-X9K
-      '31f76bd6e275f2a0b9f7c17c93bd2af763ae933b2f8ca1e042bf69a7dd4a1c1d', // CYBERPRO2026X9K
-      '8c8c1fee9a2fec548c42cf5915d272d7bf638df3241d62d7a9ce7467d4ed5404', // ALUNO-CYBER-8842
-      '142d97345d0069ccd1d3a6deb8542fea5f8205f33d46b9a1d376370c1152fe5b', // ALUNOCYBER8842
-      'fbd0d37d44f58a19a3670b0ac9476a698e450c1eab5b9d7c2bd2acd12d5763af', // INVEST-PRO-2026,
-      'fd9fb3bab594aed2cd1bb0294542a6669f4041db3f2ca8659eb7f429229eb1e5', // INVESTPRO2026,
-      '10f67fa2317d425a31fd5f34c0485886d193f344c4f89b127ec3f3d396f7c0be', // ALUNO-INVEST-2026,
-      '688a91ad9b5fd1c4bb75af092bcfe1159ca891c6d13de1aaa75a6d9094e5e5ef', // ALUNOINVEST2026,
-      'c89b2b6105466b891f0d75ab6c8eb2d2b8af3f7bebe7b64e6e56e5578295ac79', // INVEST2026VIP,
-      '87d283127b6fd9aec1c8816861dab0402988acf45717dae7fbb8a3e39e0752c1', // INVEST-VIP-2026,
-      '0ca6a950d809be14c43051487abaeda945084bf3aec4c423860682f982b10696', // INVESTVIP2026,
-      '6f3017fb8e1f6300ee8ad920c6b4d807f8f898750f6da7e36ce574a3341abd16', // INV-2026-VIP
+    gestorAccessHashes: [
+      'aede49990b5c69b2f43298921b966f8517753592f4227b91e2a4bb56ac030826',
+      '5a4cde262de2aaf1f640c029c8508d817bf6188ab378daf0f0762c76864a474a'
+    ],
+    studentAccessHashes: [
+      'ceada67ca7b75a2dc273acdf67ec3fb8063bf825af2eb99d5470e153ee68b835',
+      'b6cfaa6b1c53f5fa921f0cfc85884c194a4d8e7c68d1722329ac531296a16174',
+      'b45bb7a77108d5efc5d1695c42a25657dae7cfa58ab7b813543db9cd78174c6b',
+      '0a529938776fb481b1e03d0a9264f8dfcf1665e4411895dd9bab2733901e65e3',
+      'd9423d735a0f4b6e2baef9dc4fd4880be281e7237aff040c6e29ba739adb2288',
+      'e809b9b295658316c1c9ff27b3063dded4cc34f7d3f4ed9d2c5337024d50c8da'
     ],
     isFullscreen: false,
     isOverviewOpen: false,
@@ -1039,6 +1033,31 @@
    * Executa a impressão e controle de 1ª Via / 2ª Via do Certificado
    */
   function printCertificate() {
+    // 1. Validação estrita de matrícula / desbloqueio
+    if (!state.isUnlocked) {
+      showToast('🔒 O Certificado Oficial é exclusivo para alunos matriculados no curso.', 4500);
+      openPaywallModal(38);
+      return;
+    }
+
+    // 2. Validação estrita de conclusão de todos os desafios práticos (exceto Gestor)
+    if (!state.isGestor) {
+      const pendingMod = modulesMeta.find(m => m.quizSlide && !(state.quizzes[m.id] && state.quizzes[m.id].correct));
+      if (pendingMod) {
+        showToast(`⚠️ Você precisa realizar e acertar todos os Desafios Práticos (pendente: Módulo ${pendingMod.num}) para emitir seu Certificado!`, 5000);
+        goToSlide(pendingMod.quizSlide);
+        return;
+      }
+    }
+
+    // Autoriza temporariamente a renderização para impressão no CSS
+    document.body.classList.add('cert-printing-authorized');
+    const finishPrint = () => {
+      document.body.classList.remove('cert-printing-authorized');
+      window.removeEventListener('afterprint', finishPrint);
+    };
+    window.addEventListener('afterprint', finishPrint);
+
     if (!state.certIssued) {
       // 1ª Emissão Oficial
       state.certIssued = true;
@@ -1057,12 +1076,16 @@
       setTimeout(() => {
         updateCertificateSecondCopyUI(true);
         showToast('✅ Certificado emitido com sucesso! Emissões subsequentes serão registradas como 2ª Via Oficial.', 5000);
+        document.body.classList.remove('cert-printing-authorized');
       }, 1000);
     } else {
       // 2ª Via Oficial
       updateCertificateSecondCopyUI(true);
       showToast('📄 Imprimindo 2ª Via Oficial do seu Certificado registrado...', 3500);
       window.print();
+      setTimeout(() => {
+        document.body.classList.remove('cert-printing-authorized');
+      }, 1000);
     }
   }
 
@@ -1568,31 +1591,13 @@
     return result;
   }
 
-  const GESTOR_KEYS = [
-    'GESTOR',
-    'ADMIN',
-    'MASTER',
-    'INVESTMASTER',
-    'INVEST-MASTER',
-    'INVEST-PRO-2026',
-    'INVESTPRO2026',
-    'INVEST2026VIP',
-    'INVEST-VIP',
-    'CYBERMASTER',
-    'CYBER-MASTER',
-    'GESTAO',
-    'DIRETORIA',
-    'PROFESSOR',
-    'SUPERADMIN',
-    'CYBER-EXEC-8492-PRO',
-    'CYBEREXEC8492PRO'
-  ];
-
   function isGestorKey(inputKey) {
     if (!inputKey || typeof inputKey !== 'string') return false;
     const cleanKey = inputKey.trim().toUpperCase();
-    const cleanNoSep = cleanKey.replace(/[\s\-_]/g, '');
-    return GESTOR_KEYS.some(k => k === cleanKey || k.replace(/[\s\-_]/g, '') === cleanNoSep);
+    if (!cleanKey) return false;
+    const hashRaw = sha256(cleanKey);
+    const hashNoSep = sha256(cleanKey.replace(/[\s\-_]/g, ''));
+    return state.gestorAccessHashes.includes(hashRaw) || state.gestorAccessHashes.includes(hashNoSep);
   }
 
   function isKeyValid(inputKey) {
@@ -1605,35 +1610,33 @@
     const hashRaw = sha256(cleanKey);
     const hashNoSeparators = sha256(cleanKey.replace(/[\s\-_]/g, ''));
 
-    return state.validAccessHashes.includes(hashRaw) || state.validAccessHashes.includes(hashNoSeparators);
+    return state.studentAccessHashes.includes(hashRaw) || state.studentAccessHashes.includes(hashNoSeparators);
   }
 
   /**
-   * Controle de Acesso e Modo Demonstração (Opção A + Opção B)
+   * Controle de Acesso e Modo Demonstração
    */
   function checkAccessState() {
     try {
-      // 1. Detecção automática de ambiente local (gestor no próprio computador)
+      // 1. Detecção automática de ambiente local (desenvolvimento no computador do autor)
       const isLocalEnvironment = window.location.protocol === 'file:' || 
                                  window.location.hostname === 'localhost' || 
                                  window.location.hostname === '127.0.0.1';
 
-      // 2. Verificação via Parâmetro da URL (?gestor, ?admin, ?master, ?gestao, ?acesso=..., ?token=...)
-      const urlParams = new URLSearchParams(window.location.search);
-      const isGestorParam = urlParams.has('gestor') || urlParams.has('admin') || urlParams.has('master') || urlParams.has('gestao');
-      const accessParam = (
-        urlParams.get('acesso') ||
-        urlParams.get('token') ||
-        urlParams.get('aluno') ||
-        urlParams.get('key') ||
-        ''
-      ).trim();
-
-      // Ambiente local ou parâmetro gestor libera automaticamente
-      if (isLocalEnvironment || isGestorParam) {
+      if (isLocalEnvironment) {
         unlockCourse(false, '', true);
         return;
       }
+
+      // 2. Verificação via Token Criptográfico na URL (?token=... ou ?acesso=... ou ?key=...)
+      const urlParams = new URLSearchParams(window.location.search);
+      const accessParam = (
+        urlParams.get('token') ||
+        urlParams.get('acesso') ||
+        urlParams.get('key') ||
+        urlParams.get('aluno') ||
+        ''
+      ).trim();
 
       if (accessParam && isKeyValid(accessParam)) {
         const isMaster = isGestorKey(accessParam);
@@ -2049,20 +2052,11 @@
     retryQuiz,
     openQuizFeedbackZoom,
     restartCourse,
-    unlockCourse,
-    lockCourse,
     openPaywallModal,
     closePaywallModal,
     openUnlockModal,
     closeUnlockModal,
-    getState: () => ({ ...state })
-  };
-
-  window.gestor = {
-    desbloquear: () => unlockCourse(true, '👑 Modo Gestor Ativado!', true),
-    bloquear: () => lockCourse(),
-    irParaSlide: (n) => goToSlide(n),
-    status: () => state.isUnlocked ? 'Desbloqueado (Gestor)' : 'Bloqueado (Demo)'
+    submitUnlockKey
   };
 
 })();

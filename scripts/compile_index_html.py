@@ -438,7 +438,7 @@ def compile_index_html():
   <meta name="twitter:description" content="Aprenda a investir do zero ao avançado, dominar seu orçamento, lucrar com ações e se proteger com alocação global.">
   <meta name="twitter:image" content="https://cyberexecutive.github.io/invest/imagens/anuncio-hotmart-1x1.jpg">
 
-  <link rel="stylesheet" href="css/styles.css?v=5.0">
+  <link rel="stylesheet" href="css/styles.css?v=5.1">
   
 </head>
 <body>
@@ -752,7 +752,7 @@ def compile_index_html():
       
       <form id="form-unlock-key" onsubmit="return false;" class="unlock-form">
         <div class="unlock-input-wrap">
-          <input type="text" id="input-unlock-key" class="unlock-input" placeholder="Ex: INVEST-PRO-2026 ou GESTOR" autocomplete="off" spellcheck="false" autocapitalize="characters" />
+          <input type="text" id="input-unlock-key" class="unlock-input" placeholder="Ex: INV-2026-ACESSO-FULL" autocomplete="off" spellcheck="false" autocapitalize="characters" />
           <button type="submit" class="action-pill primary" id="btn-submit-unlock">Ativar Acesso</button>
         </div>
         <div class="unlock-status-msg" id="unlock-status-msg"></div>
@@ -805,7 +805,7 @@ def compile_index_html():
   <div id="course-toast" class="course-toast" aria-live="polite"></div>
 
   
-  <script src="js/presentation.js?v=5.0"></script>
+  <script src="js/presentation.js?v=5.1"></script>
 </body>
 </html>'''
 

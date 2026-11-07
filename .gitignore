@@ -8,3 +8,6 @@ $RECYCLE.BIN/
 # Logs e arquivos locais de debug
 *.log
 
+
+__pycache__/
+*.pyc
