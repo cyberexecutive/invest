@@ -16,10 +16,12 @@ def generate_landing():
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#090d16">
 
-  <!-- Favicon e Ícones -->
-  <link rel="icon" type="image/svg+xml" href="imagens/logo-cyber-executive.svg">
-  <link rel="alternate icon" href="imagens/logo-cyber-executive.png">
-  <link rel="apple-touch-icon" href="imagens/logo-cyber-executive.png">
+  <!-- Favicon e Ícones Oficiais -->
+  <link rel="icon" type="image/svg+xml" href="imagens/logo-cyber-executive.svg?v=4.7">
+  <link rel="icon" type="image/png" sizes="32x32" href="imagens/favicon-32x32.png?v=4.7">
+  <link rel="icon" type="image/png" sizes="16x16" href="imagens/favicon-16x16.png?v=4.7">
+  <link rel="shortcut icon" href="favicon.ico?v=4.7">
+  <link rel="apple-touch-icon" sizes="180x180" href="imagens/apple-touch-icon.png?v=4.7">
 
   <!-- Canonical URL -->
   <link rel="canonical" href="https://cyberexecutive.github.io/invest/landing.html">
@@ -147,7 +149,7 @@ def generate_landing():
   <header class="lp-header">
     <div class="lp-container lp-nav-content">
       <a href="#" class="lp-brand">
-        <img src="imagens/logo-cyber-executive.png" alt="Cyber Executive Logo" class="lp-brand-logo-img" />
+        <img src="imagens/logo-cyber-executive.png?v=4.7" alt="Cyber Executive Logo" class="lp-brand-logo-img" />
         <span>INVEST <span class="lp-text-gradient-cyan">PRO 2026</span></span>
       </a>
 

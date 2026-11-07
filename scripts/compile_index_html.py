@@ -309,7 +309,7 @@ def generate_slide_html(slide):
           <div class="cert-header">
             <!-- Brasão Oficial Centralizado no Topo -->
             <div class="cert-crest-wrap">
-              <img src="imagens/logo-cyber-executive.svg" alt="Brasão Oficial Cyber Executive" class="cert-top-crest" width="64" height="64" decoding="async" />
+              <img src="imagens/logo-cyber-executive.png?v=4.7" alt="Brasão Oficial Cyber Executive" class="cert-top-crest" width="64" height="64" decoding="async" />
             </div>
 
             <div class="cert-badge-ribbon">
@@ -412,10 +412,12 @@ def compile_index_html():
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#090d16">
 
-  <!-- Favicon e Ícones -->
-  <link rel="icon" type="image/svg+xml" href="imagens/logo-cyber-executive.svg">
-  <link rel="alternate icon" href="imagens/logo-cyber-executive.png">
-  <link rel="apple-touch-icon" href="imagens/logo-cyber-executive.png">
+  <!-- Favicon e Ícones Oficiais -->
+  <link rel="icon" type="image/svg+xml" href="imagens/logo-cyber-executive.svg?v=4.7">
+  <link rel="icon" type="image/png" sizes="32x32" href="imagens/favicon-32x32.png?v=4.7">
+  <link rel="icon" type="image/png" sizes="16x16" href="imagens/favicon-16x16.png?v=4.7">
+  <link rel="shortcut icon" href="favicon.ico?v=4.7">
+  <link rel="apple-touch-icon" sizes="180x180" href="imagens/apple-touch-icon.png?v=4.7">
 
   <!-- Canonical URL -->
   <link rel="canonical" href="https://cyberexecutive.github.io/invest/">
@@ -436,7 +438,7 @@ def compile_index_html():
   <meta name="twitter:description" content="Aprenda a investir do zero ao avançado, dominar seu orçamento, lucrar com ações e se proteger com alocação global.">
   <meta name="twitter:image" content="https://cyberexecutive.github.io/invest/imagens/anuncio-hotmart-1x1.jpg">
 
-  <link rel="stylesheet" href="css/styles.css?v=4.6">
+  <link rel="stylesheet" href="css/styles.css?v=4.7">
   
 </head>
 <body>
@@ -447,7 +449,7 @@ def compile_index_html():
   <!-- Cabeçalho Fixo Superior -->
   <header class="top-header">
     <div class="brand-badge">
-      <img src="imagens/logo-cyber-executive.png" alt="Cyber Executive Logo" class="brand-badge-logo" />
+      <img src="imagens/logo-cyber-executive.png?v=4.7" alt="Cyber Executive Logo" class="brand-badge-logo" />
       <span>INVEST • COMO INVESTIR E GERENCIAR O SEU DINHEIRO</span>
     </div>
 
@@ -803,7 +805,7 @@ def compile_index_html():
   <div id="course-toast" class="course-toast" aria-live="polite"></div>
 
   
-  <script src="js/presentation.js?v=4.6"></script>
+  <script src="js/presentation.js?v=4.7"></script>
 </body>
 </html>'''
 
