@@ -60,5 +60,10 @@ document.addEventListener('DOMContentLoaded', () => {
       const sep = hotmartBtn.href.includes('?') ? '&' : '?';
       hotmartBtn.href += sep + urlParams.substring(1);
     }
+    const kiwifyBtn = document.getElementById('btn-checkout-kiwify');
+    if (kiwifyBtn && kiwifyBtn.href) {
+      const sep = kiwifyBtn.href.includes('?') ? '&' : '?';
+      kiwifyBtn.href += sep + urlParams.substring(1);
+    }
   }
 });

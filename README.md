@@ -10,7 +10,8 @@ Plataforma web de capacitação prática e executiva em Educação Financeira, R
 - **Página de Vendas Externa (Hotlink):** [https://go.hotmart.com/T108385988V](https://go.hotmart.com/T108385988V) *(redireciona para a landing page)*  
 - **Página de Pagamento (Checkout Direto Hotmart):** [https://pay.hotmart.com/T108385988V](https://pay.hotmart.com/T108385988V)  
 - **Página do Produto Hotmart:** [https://go.hotmart.com/T108385988V?dp=1](https://go.hotmart.com/T108385988V?dp=1)  
-- **Kiwify Checkout:** [https://pay.kiwify.com.br/E63o3Rc](https://pay.kiwify.com.br/E63o3Rc)  
+- **Kiwify Checkout Oficial (R$ 47,00):** [https://pay.kiwify.com.br/SVqQtZZ](https://pay.kiwify.com.br/SVqQtZZ)  
+- **Kiwify Sales Page:** [https://kiwify.app/Nm42Cld](https://kiwify.app/Nm42Cld)  
 
 ---
 
