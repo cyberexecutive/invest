@@ -86,7 +86,7 @@ def generate_landing():
             "price": "47.00",
             "priceCurrency": "BRL",
             "availability": "https://schema.org/InStock",
-            "url": "https://pay.hotmart.com/H108332477H",
+            "url": "https://pay.hotmart.com/T108385988V",
             "category": "Hotmart Checkout"
           }
         ]
@@ -504,8 +504,14 @@ def generate_landing():
             <a href="https://pay.kiwify.com.br/E63o3Rc" class="lp-btn lp-btn-kiwify lp-btn-clean" target="_blank" rel="noopener" id="btn-checkout-kiwify" style="border-radius: 9999px !important;">
               PAGAR VIA KIWIFY
             </a>
-            <a href="https://pay.hotmart.com/H108332477H" class="lp-btn lp-btn-hotmart lp-btn-clean" target="_blank" rel="noopener" id="btn-checkout-hotmart" style="border-radius: 9999px !important;">
+            <a href="https://pay.hotmart.com/T108385988V" class="lp-btn lp-btn-hotmart lp-btn-clean" target="_blank" rel="noopener" id="btn-checkout-hotmart" style="border-radius: 9999px !important;">
               PAGAR VIA HOTMART
+            </a>
+          </div>
+          <div class="lp-hotmart-links" style="margin-top: 10px; font-size: 0.82rem; color: var(--lp-text-muted); text-align: center;">
+            <a href="https://go.hotmart.com/T108385988V?dp=1" class="lp-link-subtle" target="_blank" rel="noopener" style="color: #38bdf8; text-decoration: none; display: inline-flex; align-items: center; gap: 5px;">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              <span>Ver Página Oficial do Treinamento na Hotmart</span>
             </a>
           </div>
           <p style="text-align: center; font-size: 0.82rem; color: var(--lp-text-muted); margin-top: 14px;">
@@ -604,6 +610,7 @@ def generate_landing():
         <a href="#modulos">Conteúdo</a>
         <a href="#certificado">Certificação</a>
         <a href="#inscricao">Inscrição</a>
+        <a href="https://go.hotmart.com/T108385988V?dp=1" target="_blank" rel="noopener">Página do Produto Hotmart</a>
         <a href="index.html">Demonstração Interativa</a>
       </div>
       <p>© 2026 INVEST PRO • Como Investir e Gerenciar o Seu Dinheiro.</p>
@@ -611,7 +618,7 @@ def generate_landing():
     </div>
   </footer>
 
-  <script src="js/landing.js"></script>
+  <script src="js/landing.js?v=4.8"></script>
 </body>
 </html>
 '''

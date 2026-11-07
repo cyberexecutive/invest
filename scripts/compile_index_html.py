@@ -438,7 +438,7 @@ def compile_index_html():
   <meta name="twitter:description" content="Aprenda a investir do zero ao avançado, dominar seu orçamento, lucrar com ações e se proteger com alocação global.">
   <meta name="twitter:image" content="https://cyberexecutive.github.io/invest/imagens/anuncio-hotmart-1x1.jpg">
 
-  <link rel="stylesheet" href="css/styles.css?v=4.7">
+  <link rel="stylesheet" href="css/styles.css?v=4.8">
   
 </head>
 <body>
@@ -728,7 +728,7 @@ def compile_index_html():
           <a href="https://pay.kiwify.com.br/E63o3Rc" class="paywall-cta-btn paywall-btn-kiwify" id="btn-paywall-kiwify" target="_blank" rel="noopener" style="border-radius: 9999px !important;">
             PAGAR VIA KIWIFY
           </a>
-          <a href="https://pay.hotmart.com/H108332477H" class="paywall-cta-btn paywall-btn-hotmart" id="btn-paywall-hotmart" target="_blank" rel="noopener" style="border-radius: 9999px !important;">
+          <a href="https://pay.hotmart.com/T108385988V" class="paywall-cta-btn paywall-btn-hotmart" id="btn-paywall-hotmart" target="_blank" rel="noopener" style="border-radius: 9999px !important;">
             PAGAR VIA HOTMART
           </a>
         </div>
@@ -805,7 +805,7 @@ def compile_index_html():
   <div id="course-toast" class="course-toast" aria-live="polite"></div>
 
   
-  <script src="js/presentation.js?v=4.7"></script>
+  <script src="js/presentation.js?v=4.8"></script>
 </body>
 </html>'''
 

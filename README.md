@@ -6,8 +6,10 @@ Plataforma web de capacitação prática e executiva em Educação Financeira, R
 - **Treinamento Interativo:** [https://cyberexecutive.github.io/invest/](https://cyberexecutive.github.io/invest/)  
 - **Landing Page de Vendas:** [https://cyberexecutive.github.io/invest/landing.html](https://cyberexecutive.github.io/invest/landing.html)  
 
-💳 **Checkouts Oficiais de Pagamento (R$ 47,00):**  
-- **Hotmart Checkout:** [https://pay.hotmart.com/H108332477H](https://pay.hotmart.com/H108332477H)  
+💳 **Links Oficiais Hotmart & Pagamento (R$ 47,00):**  
+- **Página de Vendas Externa (Hotlink):** [https://go.hotmart.com/T108385988V](https://go.hotmart.com/T108385988V) *(redireciona para a landing page)*  
+- **Página de Pagamento (Checkout Direto Hotmart):** [https://pay.hotmart.com/T108385988V](https://pay.hotmart.com/T108385988V)  
+- **Página do Produto Hotmart:** [https://go.hotmart.com/T108385988V?dp=1](https://go.hotmart.com/T108385988V?dp=1)  
 - **Kiwify Checkout:** [https://pay.kiwify.com.br/E63o3Rc](https://pay.kiwify.com.br/E63o3Rc)  
 
 ---

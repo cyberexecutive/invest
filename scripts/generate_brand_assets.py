@@ -84,3 +84,4 @@ with open(svg_dest, "w", encoding="utf-8") as f:
 print(f"Salvo: {svg_dest}")
 
 print("Todas as mídias de marca geradas com perfeição!")
+

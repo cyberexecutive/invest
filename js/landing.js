@@ -51,5 +51,14 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
-});
 
+  // 3. Preservação de parâmetros de rastreamento Hotmart (src, sck, ref, etc.)
+  const urlParams = window.location.search;
+  if (urlParams) {
+    const hotmartBtn = document.getElementById('btn-checkout-hotmart');
+    if (hotmartBtn && hotmartBtn.href) {
+      const sep = hotmartBtn.href.includes('?') ? '&' : '?';
+      hotmartBtn.href += sep + urlParams.substring(1);
+    }
+  }
+});
