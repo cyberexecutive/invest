@@ -61,7 +61,7 @@ Plataforma web de capacitação prática e executiva em Educação Financeira, R
    - *Aula 36:* Os 5 Mandamentos da Riqueza Duradoura (A síntese executiva para enriquecer com tranquilidade).
    - *Aula 37:* **Quiz 06** — Desafio Final: O Desafio da Bolada de R$ 50.000: Como Alocar com Maestria?
 8. **Slide 38: Dashboard Executivo Final & Certificação Oficial**
-   - Emissão formal do **Certificado de Formação Executiva em Gestão Financeira & Investimentos Estratégicos** (6 Horas), com nome do aluno, CPF, hash criptográfico único `INV-2026-XXXX-XXXX`, assinatura digital do CEO Claudinei Gonçalves de Lima e exportação em PDF de alta resolução.
+   - Emissão formal do **Certificado de Formação Executiva em Gestão Financeira & Investimentos Estratégicos** (6 Horas), com nome do aluno, CPF, hash criptográfico único `INV-2026-XXXX-XXXX`, assinatura digital oficial do Diretor Executivo - CEO e exportação em PDF de alta resolução.
 
 ---
 

@@ -12,7 +12,7 @@ def generate_landing():
   <title>Como Investir e Gerenciar o Seu Dinheiro | Formação Executiva Prática 2026</title>
   <meta name="description" content="Como Investir e Gerenciar o Seu Dinheiro. Formação 100% interativa com 6 módulos práticos, 6 desafios com tomada de decisão da vida real, renda fixa, ações, FIIs, criptoativos e certificação oficial em PDF.">
   <meta name="keywords" content="como investir e gerenciar dinheiro, finanças pessoais, renda fixa, tesouro direto, ações dividendos, fundos imobiliários fiis, bitcoin criptoativos, orçamento 50 30 20">
-  <meta name="author" content="Claudinei Gonçalves de Lima | Cyber Executive">
+  <meta name="author" content="Cyber Executive">
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#090d16">
 
@@ -108,7 +108,7 @@ def generate_landing():
             "name": "O certificado tem validade formal?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Sim! O certificado é emitido com carga horária de 6 horas, data de conclusão, código criptográfico individual INV-2026 e assinatura executiva formal do CEO Claudinei Gonçalves de Lima, válido para comprovação de horas complementares e enriquecimento curricular."
+              "text": "Sim! O certificado é emitido com carga horária de 6 horas, data de conclusão, código criptográfico individual INV-2026 e assinatura oficial do Diretor Executivo - CEO da Cyber Executive Academy, válido para comprovação de horas complementares e enriquecimento curricular."
             }
           },
           {
@@ -414,8 +414,52 @@ def generate_landing():
   <section class="lp-section lp-cert-section" id="certificado">
     <div class="lp-container">
       <div class="lp-cert-grid">
-        <div class="lp-cert-preview-wrapper">
-          <img src="imagens/certificado-preview.jpg" alt="Certificado Oficial de Formação em Investimentos" class="lp-cert-preview-img">
+        <!-- Painel de Proteção e Autenticidade Institucional (Anti-Fraude) -->
+        <div class="lp-cert-shield-card">
+          <div class="lp-cert-shield-glow"></div>
+          <div class="lp-cert-shield-header">
+            <div class="lp-cert-badge-security">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              <span>EMISSÃO BLINDADA • ANTI-FRAUDE</span>
+            </div>
+            <div class="lp-cert-status-tag">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+              <span>Acesso Restrito ao Concluinte</span>
+            </div>
+          </div>
+
+          <div class="lp-cert-shield-body">
+            <div class="lp-cert-crest-halo">
+              <img src="imagens/logo-cyber-executive.png" alt="Brasão Cyber Executive" class="lp-cert-crest-img" width="80" height="80">
+            </div>
+            <h3 class="lp-cert-shield-title">Certificado Oficial Protegido</h3>
+            <p class="lp-cert-shield-desc">
+              Por rigoroso padrão de <strong>segurança institucional contra fraudes e falsificações</strong>, o modelo integral do documento não é exposto publicamente na internet. A visualização e download em PDF de alta resolução são liberados exclusivamente na plataforma para alunos que completarem 100% da carga horária e forem aprovados em todos os Desafios Práticos.
+            </p>
+
+            <div class="lp-cert-protocol-box">
+              <div class="lp-cert-protocol-item">
+                <svg class="lp-check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span><strong>Chave Criptográfica Individual</strong> (Registro SHA-256 único)</span>
+              </div>
+              <div class="lp-cert-protocol-item">
+                <svg class="lp-check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span><strong>Subscrição Institucional:</strong> Diretor Executivo - CEO</span>
+              </div>
+              <div class="lp-cert-protocol-item">
+                <svg class="lp-check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span><strong>Autenticação Nominal:</strong> Nome Completo e CPF do Aluno</span>
+              </div>
+              <div class="lp-cert-protocol-item">
+                <svg class="lp-check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span><strong>Exportação em Alta Resolução</strong> para LinkedIn e Impressão</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="lp-cert-shield-footer">
+            <span class="lp-cert-secure-stamp">🔒 Validação Direta na Plataforma • Cyber Executive Academy</span>
+          </div>
         </div>
 
         <div class="lp-cert-info">
@@ -432,7 +476,7 @@ def generate_landing():
             </li>
             <li class="lp-cert-feature-item">
               <svg class="lp-check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              <span><strong>Assinatura Institucional:</strong> Subscrito pela Direção Executiva (Claudinei Gonçalves de Lima - CEO).</span>
+              <span><strong>Assinatura Institucional:</strong> Subscrito formalmente pelo <strong>Diretor Executivo - CEO</strong> da Cyber Executive Academy.</span>
             </li>
             <li class="lp-cert-feature-item">
               <svg class="lp-check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
@@ -558,7 +602,7 @@ def generate_landing():
             <svg class="lp-faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
           </button>
           <div class="lp-faq-answer">
-            <p>Sim! O certificado é emitido com carga horária de 6 horas, data de conclusão, código criptográfico individual INV-2026 e assinatura executiva formal do CEO Claudinei Gonçalves de Lima, válido para comprovação de horas complementares e enriquecimento curricular.</p>
+            <p>Sim! O certificado é emitido com carga horária de 6 horas, data de conclusão, código criptográfico individual INV-2026 e assinatura oficial do Diretor Executivo - CEO da Cyber Executive Academy, válido para comprovação de horas complementares e enriquecimento curricular.</p>
           </div>
         </div>
 

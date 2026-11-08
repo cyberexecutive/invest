@@ -369,11 +369,11 @@ def generate_slide_html(slide):
             <!-- Assinatura Centralizada da Direção / CEO -->
             <div class="cert-signature-box central">
               <div class="cert-signature-space" title="Assinatura Digital Oficial">
-                <img src="imagens/assinatura-ceo.png" alt="Assinatura Claudinei Gonçalves de Lima" class="cert-signature-img" />
+                <img src="imagens/assinatura-ceo.png" alt="Assinatura Oficial - Diretor Executivo - CEO" class="cert-signature-img" />
               </div>
               <div class="cert-signature-line"></div>
-              <div class="cert-signature-name">Claudinei Gonçalves de Lima</div>
-              <div class="cert-signature-role">CEO - Strategic Financial Planning &amp; Corporate Management</div>
+              <div class="cert-signature-name">Diretor Executivo - CEO</div>
+              <div class="cert-signature-role">Cyber Executive Academy • Planejamento Estratégico &amp; Mercado de Capitais</div>
               <div class="cert-code-tag" id="cert-auth-code">INV-2026-8942-BR</div>
               <div class="cert-second-copy-note" id="cert-second-copy-note" style="display: none;">
                 1ª Emissão Original em <span id="cert-orig-date">--</span> • Via registrada pelo titular acadêmico.
@@ -408,7 +408,7 @@ def compile_index_html():
   <title>Como Investir e Gerenciar o Seu Dinheiro | Formação Prática 2026</title>
   <meta name="description" content="Como Investir e Gerenciar o Seu Dinheiro. Formação interativa e prática: mentalidade financeira, eliminação de dívidas, renda fixa inteligente, ações de dividendos, fundos imobiliários, criptoativos e alocação global blindada.">
   <meta name="keywords" content="como investir e gerenciar dinheiro, educação financeira, renda fixa, tesouro direto, ações dividendos, fundos imobiliários fiis, bitcoin criptoativos, orçamento pessoal">
-  <meta name="author" content="Claudinei Gonçalves de Lima | Cyber Executive">
+  <meta name="author" content="Cyber Executive">
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#090d16">
 

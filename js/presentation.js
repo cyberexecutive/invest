@@ -370,7 +370,7 @@
       }
 
       const savedName = localStorage.getItem('invest_student_name');
-      if (savedName && !savedName.toLowerCase().includes('claudinei')) {
+      if (savedName) {
         state.studentName = savedName;
       }
       const savedCpf = localStorage.getItem('invest_student_cpf');
