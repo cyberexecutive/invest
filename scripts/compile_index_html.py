@@ -459,7 +459,7 @@ def compile_index_html():
         <button class="header-pill-badge" id="btn-header-unlock" title="Status de Acesso do Treinamento">
           <span class="badge-dot" id="access-badge-dot"></span>
           <span id="access-badge-text">⚡ Demonstração Gratuita</span>
-          <span class="badge-action" id="badge-action-label">• 🔑 Já sou Aluno</span>
+          <span class="badge-action" id="badge-action-label">• 🔑 Já sou Aluno / Gestor</span>
         </button>
       </div>
 
@@ -736,7 +736,7 @@ def compile_index_html():
 
       <div class="paywall-footer-hint">
         <span>Já adquiriu o treinamento?</span>
-        <button type="button" class="paywall-unlock-link" id="btn-paywall-enter-key">Inserir Chave de Acesso do Aluno</button>
+        <button type="button" class="paywall-unlock-link" id="btn-paywall-enter-key">🔑 Inserir Chave de Acesso (Aluno ou Gestor)</button>
       </div>
     </div>
   </div>
@@ -747,7 +747,7 @@ def compile_index_html():
       <button class="close-modal-btn" id="close-unlock-btn" title="Fechar (Esc)">✕</button>
       
       <div class="unlock-icon-circle">🔑</div>
-      <h3 class="unlock-title">Ativação de Acesso do Aluno</h3>
+      <h3 class="unlock-title">Ativação de Acesso (Aluno ou Gestor)</h3>
       <p class="unlock-desc">Digite sua chave de aluno ou a chave master de gestão do treinamento:</p>
       
       <form id="form-unlock-key" onsubmit="return false;" class="unlock-form">
